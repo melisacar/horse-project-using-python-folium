@@ -1,3 +1,4 @@
+#pip install folium
 import folium
 
 #Coordinates and relative informations 
@@ -9,7 +10,9 @@ fac = [
 
 #Creating the map
 marmara_region_map = folium.Map(location=[40.63, 28.12], zoom_start=8)
-
+#Setting the boundaries
+bounds = [[40.0, 26.5], [41.5, 30.0]]
+marmara_region_map.fit_bounds(bounds)
 
 #Adding facilities to the marmara region map
 for facility in fac:
