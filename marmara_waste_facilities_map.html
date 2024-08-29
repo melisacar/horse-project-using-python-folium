@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_22d3a5e10a57eaf404f8317f614d7d28 {
+                #map_302baca7d938fb5f5bf4033d7e5041cf {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_22d3a5e10a57eaf404f8317f614d7d28" ></div>
+            <div class="folium-map" id="map_302baca7d938fb5f5bf4033d7e5041cf" ></div>
         
 </body>
 <script>
     
     
-            var map_22d3a5e10a57eaf404f8317f614d7d28 = L.map(
-                "map_22d3a5e10a57eaf404f8317f614d7d28",
+            var map_302baca7d938fb5f5bf4033d7e5041cf = L.map(
+                "map_302baca7d938fb5f5bf4033d7e5041cf",
                 {
                     center: [40.63, 28.12],
                     crs: L.CRS.EPSG3857,
@@ -60,37 +60,43 @@
 
         
     
-            var tile_layer_6842c45d176e694f8f07e7b82a0e601f = L.tileLayer(
+            var tile_layer_bed34a5bd72444a5767ac6a2daac766d = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_6842c45d176e694f8f07e7b82a0e601f.addTo(map_22d3a5e10a57eaf404f8317f614d7d28);
+            tile_layer_bed34a5bd72444a5767ac6a2daac766d.addTo(map_302baca7d938fb5f5bf4033d7e5041cf);
         
     
-            var marker_8ba3e485b37bae8453c2015a5d40a3d3 = L.marker(
+            map_302baca7d938fb5f5bf4033d7e5041cf.fitBounds(
+                [[40.0, 26.5], [41.5, 30.0]],
+                {}
+            );
+        
+    
+            var marker_af7ac727be542eb2a325a7c0fa84f92d = L.marker(
                 [40.99, 28.6811],
                 {}
-            ).addTo(map_22d3a5e10a57eaf404f8317f614d7d28);
+            ).addTo(map_302baca7d938fb5f5bf4033d7e5041cf);
         
     
-        var popup_6f569848e18ab16292932eb5ec666bb8 = L.popup({"maxWidth": 200});
+        var popup_73f70ddc668f5c861696d1d76ca25b3d = L.popup({"maxWidth": 200});
 
         
             
-                var html_f24d54bd89a3be24a6342a38c0ed93a5 = $(`<div id="html_f24d54bd89a3be24a6342a38c0ed93a5" style="width: 100.0%; height: 100.0%;">This facility treats 5000 m³ of wastewater daily.</div>`)[0];
-                popup_6f569848e18ab16292932eb5ec666bb8.setContent(html_f24d54bd89a3be24a6342a38c0ed93a5);
+                var html_d4811a8735d1594d14412fb8ee67cd8c = $(`<div id="html_d4811a8735d1594d14412fb8ee67cd8c" style="width: 100.0%; height: 100.0%;">This facility treats 5000 m³ of wastewater daily.</div>`)[0];
+                popup_73f70ddc668f5c861696d1d76ca25b3d.setContent(html_d4811a8735d1594d14412fb8ee67cd8c);
             
         
 
-        marker_8ba3e485b37bae8453c2015a5d40a3d3.bindPopup(popup_6f569848e18ab16292932eb5ec666bb8)
+        marker_af7ac727be542eb2a325a7c0fa84f92d.bindPopup(popup_73f70ddc668f5c861696d1d76ca25b3d)
         ;
 
         
     
     
-            marker_8ba3e485b37bae8453c2015a5d40a3d3.bindTooltip(
+            marker_af7ac727be542eb2a325a7c0fa84f92d.bindTooltip(
                 `<div>
                      Ambarlı İleri Biyolojik Atık Su Arıtma Tesisi
                  </div>`,
@@ -98,28 +104,28 @@
             );
         
     
-            var marker_c51d100116c9c1508682697dcc33acf6 = L.marker(
+            var marker_8c0946fa2774877b5b1f79da3ae893be = L.marker(
                 [41.2167833, 28.853361],
                 {}
-            ).addTo(map_22d3a5e10a57eaf404f8317f614d7d28);
+            ).addTo(map_302baca7d938fb5f5bf4033d7e5041cf);
         
     
-        var popup_494893d485387a02a8c1d1174ee99fe4 = L.popup({"maxWidth": 200});
+        var popup_b3ff5ec670abcd0e86837b991d813411 = L.popup({"maxWidth": 200});
 
         
             
-                var html_5f59a77fb26cd54bb30b52c9e5d0d4aa = $(`<div id="html_5f59a77fb26cd54bb30b52c9e5d0d4aa" style="width: 100.0%; height: 100.0%;">This facility produces 1000000 tons of solid waste per year.</div>`)[0];
-                popup_494893d485387a02a8c1d1174ee99fe4.setContent(html_5f59a77fb26cd54bb30b52c9e5d0d4aa);
+                var html_9b35f241c6e8560453330157508c6394 = $(`<div id="html_9b35f241c6e8560453330157508c6394" style="width: 100.0%; height: 100.0%;">This facility produces 1000000 tons of solid waste per year.</div>`)[0];
+                popup_b3ff5ec670abcd0e86837b991d813411.setContent(html_9b35f241c6e8560453330157508c6394);
             
         
 
-        marker_c51d100116c9c1508682697dcc33acf6.bindPopup(popup_494893d485387a02a8c1d1174ee99fe4)
+        marker_8c0946fa2774877b5b1f79da3ae893be.bindPopup(popup_b3ff5ec670abcd0e86837b991d813411)
         ;
 
         
     
     
-            marker_c51d100116c9c1508682697dcc33acf6.bindTooltip(
+            marker_8c0946fa2774877b5b1f79da3ae893be.bindTooltip(
                 `<div>
                      Odayeri Enerji Üretim Tesisi
                  </div>`,
