@@ -40,9 +40,9 @@ xdg-open marmara_waste_facilities_map.html  # Linux
 
 ## Future Improvements:
 - Make custom changes:
-    [x] map style
-    [x] icon style
-    [] popup background and typing color
-    [] minimap 
-    [] heatmap 
+    - [x] map style
+    - [x] icon style
+    - [] popup background and typing color
+    - [] minimap 
+    - [] heatmap 
 
