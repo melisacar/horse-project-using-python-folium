@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_302baca7d938fb5f5bf4033d7e5041cf {
+                #map_037fa4c0104187056cf3be442da0449e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_302baca7d938fb5f5bf4033d7e5041cf" ></div>
+            <div class="folium-map" id="map_037fa4c0104187056cf3be442da0449e" ></div>
         
 </body>
 <script>
     
     
-            var map_302baca7d938fb5f5bf4033d7e5041cf = L.map(
-                "map_302baca7d938fb5f5bf4033d7e5041cf",
+            var map_037fa4c0104187056cf3be442da0449e = L.map(
+                "map_037fa4c0104187056cf3be442da0449e",
                 {
                     center: [40.63, 28.12],
                     crs: L.CRS.EPSG3857,
@@ -60,43 +60,49 @@
 
         
     
-            var tile_layer_bed34a5bd72444a5767ac6a2daac766d = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            var tile_layer_71a715787237fe1e79c4ee2d034afa73 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_bed34a5bd72444a5767ac6a2daac766d.addTo(map_302baca7d938fb5f5bf4033d7e5041cf);
+            tile_layer_71a715787237fe1e79c4ee2d034afa73.addTo(map_037fa4c0104187056cf3be442da0449e);
         
     
-            map_302baca7d938fb5f5bf4033d7e5041cf.fitBounds(
+            map_037fa4c0104187056cf3be442da0449e.fitBounds(
                 [[40.0, 26.5], [41.5, 30.0]],
                 {}
             );
         
     
-            var marker_af7ac727be542eb2a325a7c0fa84f92d = L.marker(
+            var marker_a94ef9a66cf3996d750dd58568810843 = L.marker(
                 [40.99, 28.6811],
                 {}
-            ).addTo(map_302baca7d938fb5f5bf4033d7e5041cf);
+            ).addTo(map_037fa4c0104187056cf3be442da0449e);
         
     
-        var popup_73f70ddc668f5c861696d1d76ca25b3d = L.popup({"maxWidth": 200});
+            var icon_4fb80a7db40e411466eb0a2ad907530f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a94ef9a66cf3996d750dd58568810843.setIcon(icon_4fb80a7db40e411466eb0a2ad907530f);
+        
+    
+        var popup_c732574d23e85b6c95fdc84d7aa12b92 = L.popup({"maxWidth": 200});
 
         
             
-                var html_d4811a8735d1594d14412fb8ee67cd8c = $(`<div id="html_d4811a8735d1594d14412fb8ee67cd8c" style="width: 100.0%; height: 100.0%;">This facility treats 5000 m³ of wastewater daily.</div>`)[0];
-                popup_73f70ddc668f5c861696d1d76ca25b3d.setContent(html_d4811a8735d1594d14412fb8ee67cd8c);
+                var html_1ed7ff09f13412d751d8ca34f76cb0e9 = $(`<div id="html_1ed7ff09f13412d751d8ca34f76cb0e9" style="width: 100.0%; height: 100.0%;">This facility treats 5000 m³ of wastewater daily.</div>`)[0];
+                popup_c732574d23e85b6c95fdc84d7aa12b92.setContent(html_1ed7ff09f13412d751d8ca34f76cb0e9);
             
         
 
-        marker_af7ac727be542eb2a325a7c0fa84f92d.bindPopup(popup_73f70ddc668f5c861696d1d76ca25b3d)
+        marker_a94ef9a66cf3996d750dd58568810843.bindPopup(popup_c732574d23e85b6c95fdc84d7aa12b92)
         ;
 
         
     
     
-            marker_af7ac727be542eb2a325a7c0fa84f92d.bindTooltip(
+            marker_a94ef9a66cf3996d750dd58568810843.bindTooltip(
                 `<div>
                      Ambarlı İleri Biyolojik Atık Su Arıtma Tesisi
                  </div>`,
@@ -104,30 +110,71 @@
             );
         
     
-            var marker_8c0946fa2774877b5b1f79da3ae893be = L.marker(
+            var marker_c12af6fdbf2f062a0e810e092c599958 = L.marker(
                 [41.2167833, 28.853361],
                 {}
-            ).addTo(map_302baca7d938fb5f5bf4033d7e5041cf);
+            ).addTo(map_037fa4c0104187056cf3be442da0449e);
         
     
-        var popup_b3ff5ec670abcd0e86837b991d813411 = L.popup({"maxWidth": 200});
+            var icon_3cf9f58f79e2de1cd393e68ca66a0793 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c12af6fdbf2f062a0e810e092c599958.setIcon(icon_3cf9f58f79e2de1cd393e68ca66a0793);
+        
+    
+        var popup_6acbe2b33e80ecabfaa03dd49a9a70f7 = L.popup({"maxWidth": 200});
 
         
             
-                var html_9b35f241c6e8560453330157508c6394 = $(`<div id="html_9b35f241c6e8560453330157508c6394" style="width: 100.0%; height: 100.0%;">This facility produces 1000000 tons of solid waste per year.</div>`)[0];
-                popup_b3ff5ec670abcd0e86837b991d813411.setContent(html_9b35f241c6e8560453330157508c6394);
+                var html_581662844a80fb152e06579a3ad53fad = $(`<div id="html_581662844a80fb152e06579a3ad53fad" style="width: 100.0%; height: 100.0%;">This facility produces ... energy per year.</div>`)[0];
+                popup_6acbe2b33e80ecabfaa03dd49a9a70f7.setContent(html_581662844a80fb152e06579a3ad53fad);
             
         
 
-        marker_8c0946fa2774877b5b1f79da3ae893be.bindPopup(popup_b3ff5ec670abcd0e86837b991d813411)
+        marker_c12af6fdbf2f062a0e810e092c599958.bindPopup(popup_6acbe2b33e80ecabfaa03dd49a9a70f7)
         ;
 
         
     
     
-            marker_8c0946fa2774877b5b1f79da3ae893be.bindTooltip(
+            marker_c12af6fdbf2f062a0e810e092c599958.bindTooltip(
                 `<div>
                      Odayeri Enerji Üretim Tesisi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54c146100c43a1f318f78191789aaef7 = L.marker(
+                [41.1167833, 28.853361],
+                {}
+            ).addTo(map_037fa4c0104187056cf3be442da0449e);
+        
+    
+            var icon_32fd4dff58b7a7ebbdad30d9ea5e29c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "trash", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_54c146100c43a1f318f78191789aaef7.setIcon(icon_32fd4dff58b7a7ebbdad30d9ea5e29c7);
+        
+    
+        var popup_f3159b9d966c300f72772909af217226 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_40b1a2a622c72b88533f160a180b328f = $(`<div id="html_40b1a2a622c72b88533f160a180b328f" style="width: 100.0%; height: 100.0%;">This facility collects ... solid waste a year.</div>`)[0];
+                popup_f3159b9d966c300f72772909af217226.setContent(html_40b1a2a622c72b88533f160a180b328f);
+            
+        
+
+        marker_54c146100c43a1f318f78191789aaef7.bindPopup(popup_f3159b9d966c300f72772909af217226)
+        ;
+
+        
+    
+    
+            marker_54c146100c43a1f318f78191789aaef7.bindTooltip(
+                `<div>
+                     Odayeri AGM
                  </div>`,
                 {"sticky": true}
             );
