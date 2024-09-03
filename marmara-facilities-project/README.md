@@ -14,7 +14,7 @@
 1. Clone the Repo
 ```shell
 git clone https://github.com/melisacar/horse-project-using-python-folium.git
-cd horse-project-using-python-folium
+cd .\marmara-facilities-project\
 ```
 
 2. Set Up the Environment
