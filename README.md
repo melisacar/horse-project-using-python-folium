@@ -36,17 +36,17 @@ pip install -r regional-heat-map-project/requirements.txt  # For Research Heatma
 ```
 
 3. Run the Script
-- Generate the map by running:
-  - Facilities Map
+Generate the map by running:
+- Facilities Map
 ```shell
 python marmara-facilities-project/main.py
 ```
-  - Research Heatmap
+- Research Heatmap
 ```shell
 python regional-heat-map-project/main.py
 ```
 
-4. View the Map
+1. View the Map
    - Open the generated HTML file in your web browser to view the interactive map and heatmap.
 
 ## Dependencies
