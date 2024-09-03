@@ -10,9 +10,6 @@ locations = [
     #Other locations
 ]
 
-#Create dataframe with pandas
-#df = pd.DataFrame(data)
-
 #Creating the map
 heat_map = folium.Map(location=[40.63, 28.12], tiles='Cartodb Positron', zoom_start=8)
 
@@ -29,6 +26,6 @@ for loc in locations:
         popup=f"{loc['name']}: {loc['research_count']} studies",
         tooltip=loc['name'],
         icon=folium.Icon(color='black', icon='info-sign')
-    )
+    ).add_to(heat_map)
 
 heat_map.save("heat_map.html")
