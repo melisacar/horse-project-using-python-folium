@@ -2,10 +2,7 @@
 
 ## Overview
 - This repository contains two projects focused on mapping and visualizing environmental data and academic research related to the Marmara region of Turkey. These projects are designed to provide insights into both the region's waste management infrastructure and the concentration of research activities on the Sea of Marmara.
-- **Explore the Interactive Map:** 
-  - Click [here](https://melisacar.github.io/horse-project-using-python-folium/marmara_waste_facilities_map.html) to explore the map, where you can see information about each facility.
   
-
 ## Projects
 1. **Marmara Region Energy, Wastewater and Solid Waste Facilities Mapping**
    - **Description:** This project visualizes the locations of energy, wastewater and solid waste facilities in the Marmara region. Using Python and Folium, it generates an interactive map that displays facility details when hovering over each location.
@@ -50,7 +47,7 @@ python regional-heat-map-project/main.py
 ```
 
 4. View the Map
-- Open the generated HTML file in your web browser to view the interactive map and heatmap.
+   - Open the generated HTML file in your web browser to view the interactive map and heatmap.
 
 ## Dependencies
 1. Python 3.x
