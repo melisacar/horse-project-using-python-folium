@@ -1,20 +1,22 @@
-# Horse - Marmara Region Energy, Wastewater and Solid Waste Facilities Mapping
+# The Sea of Marmara Mapping - Realted Researches
 
-- This project visualizes the locations of wastewater and solid waste facilities in the Marmara region of Turkey. Using Python and the Folium library, the project generates an interactive map where facility details are displayed when hovering over the facility's location.
-- **Explore the Interactive Map:** 
-  - Click [here](https://melisacar.github.io/horse-project-using-python-folium/marmara_waste_facilities_map.html) to explore the map, where you can see information about each facility.
-  
+- This project focuses on a comprehensive literature review of academic studies published between 2020 and 2024 on the Marmara Sea. The primary goal is to systematically examine and archive theses, articles, and other academic sources published during this period. This work aims to present the existing literature in a well-organized and accessible format for scientists and researchers planning to study the Sea of Marmara.
+
+
+## Explore the Heatmap
+- **Visualize Research Concentration:** The heatmap provides a visual representation of the density and distribution of research activities related to the Sea of Marmara.
+- **Interactive Map:** Click 'here' to explore the heatmap, where you can see areas with higher research activity.
 
 ## Features
-- **Interactive Map:** The map displays wastewater and solid waste facilities' coordinates within the Marmara region.
-- **Tooltips:** Hovering over each facility marker shows a tooltip with relevant information.
-- **Python-Powered:** Built using Python and the Folium library to create and customize the interactive map.
+- **Heatmap Visualization:** Displays the concentration of research on the Marmara Sea using a heatmap.
+- **Python-Powered:** Built using Python and the Folium library to create and customize the heatmap map.
 
 ## Installation
 1. Clone the Repo
 ```shell
 git clone https://github.com/melisacar/horse-project-using-python-folium.git
 cd horse-project-using-python-folium
+cd .\regional-heat-map\
 ```
 
 2. Set Up the Environment
@@ -32,9 +34,9 @@ python main.py
 4. View the Map
 - Open the generated HTML file in your web browser to view the interactive map:
 ```shell
-start marmara_waste_facilities_map.html  # Windows
-open marmara_waste_facilities_map.html  # macOS
-xdg-open marmara_waste_facilities_map.html  # Linux
+start heat_map.html  # Windows
+open heat_map.html  # macOS
+xdg-open heat_map.html  # Linux
 ```
 
 ## Dependencies
@@ -42,10 +44,9 @@ xdg-open marmara_waste_facilities_map.html  # Linux
 2. Folium: To create and render interactive maps.
 
 ## Future Improvements:
-- Make custom changes:
-    - [x] map style
-    - [x] icon style
-    - [ ] popup background and typing color
-    - [ ] minimap 
-    - [ ] heatmap 
+- Expand dataset:
+  - [ ] Include publications from before 2020
+- Enhance heatmap features:
+    - [ ] Add more interactive elements
+    - [ ] Improve map style and design
 
