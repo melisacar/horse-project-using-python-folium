@@ -1,8 +1,8 @@
-# Horse - Marmara Region Energy, Wastewater and Solid Waste Facilities Mapping
+# Marmara Region Energy, Wastewater and Solid Waste Facilities Mapping
 
 - This project visualizes the locations of wastewater and solid waste facilities in the Marmara region of Turkey. Using Python and the Folium library, the project generates an interactive map where facility details are displayed when hovering over the facility's location.
 - **Explore the Interactive Map:** 
-  - Click [here](https://melisacar.github.io/horse-project-using-python-folium/marmara_waste_facilities_map.html) to explore the map, where you can see information about each facility.
+  - Click [here](https://melisacar.github.io/horse-project-using-python-folium/marmara-facilities-project/marmara_waste_facilities_map.html) to explore the map, where you can see information about each facility.
   
 
 ## Features
