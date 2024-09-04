@@ -2,7 +2,7 @@
 
 - This project focuses on a comprehensive literature review of academic studies published between 2020 and 2024 on the Marmara Sea. The primary goal is to systematically examine and archive theses, articles, and other academic sources published during this period. This work aims to present the existing literature in a well-organized and accessible format for scientists and researchers planning to study the Sea of Marmara.
 - **Explore the Interactive Map:** 
-  - Click [here](https://melisacar.github.io/horse-project-using-python-folium\regional-heat-map-project/heat_map.html) to explore the map, where you can see areas with higher research activity.
+  - Click [here](https://melisacar.github.io/horse-project-using-python-folium/regional-heat-map-project/heat_map.html) to explore the map, where you can see areas with higher research activity.
   - **Visualize Research Concentration:** The heatmap provides a visual representation of the density and distribution of research activities related to the Sea of Marmara.
 
 ## Features
