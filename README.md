@@ -6,17 +6,17 @@
 ## Projects
 1. **Marmara Region Energy, Wastewater and Solid Waste Facilities Mapping**
    - **Description:** This project visualizes the locations of energy, wastewater and solid waste facilities in the Marmara region. Using Python and Folium, it generates an interactive map that displays facility details when hovering over each location.
-   - **Interactive Map:** Explore the map here to see information about each facility.
+   - **Interactive Map:** Explore the map [here](https://melisacar.github.io/horse-project-using-python-folium/marmara-facilities-project/marmara_waste_facilities_map.html) to see information about each facility.
    - **Key Features:**
      - Interactive map showcasing facilities in the region.
      - Tooltips provide quick access to relevant information.
      - Project Folder: `marmara-facilities-project`
 
-2. **The Sea of Marmara Mapping - Realted Researches**
+2. **The Sea of Marmara Mapping - Related Researches**
    - **Description:** This project involves a comprehensive literature review of academic studies published between 2020 and 2024 on the Sea of Marmara. The goal is to visualize the concentration of research activities through an interactive heatmap, helping researchers identify areas with more intensive study.
-   - **Interactive Heatmap:** Visualize the research concentration here.
+   - **Interactive Heatmap:** Visualize the research concentration [here](https://melisacar.github.io/horse-project-using-python-folium/regional-heat-map-project/heat_map.html).
    - **Key Features:**
-     - Heatmap showing research density across the Marmara Sea.
+     - Heatmap showing research density across the Sea of Marmara.
      - Systematic archiving of academic studies for easy reference.
      - Project Folder: `regional-heat-map-project`
 
