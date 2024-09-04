@@ -2,6 +2,7 @@ import folium
 import pandas as pd
 from folium.plugins import HeatMap
 from folium import DivIcon
+from folium.plugins import MiniMap
 
 #Latitude and longitude information of locations and research numbers in each location
 locations = [
@@ -13,6 +14,9 @@ locations = [
 
 #Creating the map
 heat_map = folium.Map(location=[40.63, 28.12], tiles='Cartodb Positron', zoom_start=8)
+
+#Add minimap
+MiniMap().add_to(heat_map)
 
 #Data points for the heatmap
 heat_data = [[loc['lat'], loc['lon'], loc['research_count']] for loc in locations]
@@ -26,7 +30,6 @@ for loc in locations:
         location=[loc['lat'], loc['lon']],
         popup=f"{loc['name']}: {loc['research_count']} studies",
         tooltip=loc['name'],
-        #icon=folium.Icon(color='lightgray', icon='info-sign'),
         icon=DivIcon(
             icon_size=(20, 20),  # Icon size (width, height)
             icon_anchor=(10, 10),  # Position of the icon relative to its point
