@@ -16,7 +16,7 @@ locations = [
 heat_map = folium.Map(location=[40.63, 28.12], tiles='Cartodb Positron', zoom_start=8)
 
 #Add minimap
-MiniMap().add_to(heat_map)
+MiniMap(toggle_display=True).add_to(heat_map)
 
 #Data points for the heatmap
 heat_data = [[loc['lat'], loc['lon'], loc['research_count']] for loc in locations]
