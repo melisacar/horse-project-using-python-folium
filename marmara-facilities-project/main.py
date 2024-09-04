@@ -57,8 +57,6 @@ for facility in fac_3:
         tooltip=facility['name'],  #Note balloon that appears when hovering over it with the mouse
     ).add_to(marmara_region_map)
 
-
-
 # Creating a custom legend
 legend_html = '''
 <div style="position: fixed;
@@ -72,9 +70,6 @@ legend_html = '''
 </div>
 '''
 marmara_region_map.get_root().html.add_child(folium.Element(legend_html))
-
-
-
 
 #Saving the map
 marmara_region_map.save("marmara_waste_facilities_map.html")
