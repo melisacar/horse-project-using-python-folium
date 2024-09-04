@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_4654721d399c25e428cd0f12b1d462ba {
+                #map_76c7cfee41f0a7ea03073a09edf170cc {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -42,14 +42,29 @@
 <body>
     
     
-            <div class="folium-map" id="map_4654721d399c25e428cd0f12b1d462ba" ></div>
+<div style="
+    position: fixed; 
+    bottom: 20px; left: 15px; width: 50px; height: 100px; 
+    border: none; z-index:9999; font-size:10px;
+    ">
+    <div style="display: flex; flex-direction: column; height: 100%; align-items: center; padding: 0;">
+        <div style="flex: 1; background: linear-gradient(to top, blue, green, yellow, red); width: 30%; height: 100%; border-radius: 5px;"></div>
+        <div style="display: flex; flex-direction: column; justify-content: space-between; font-size: 8px; padding: 0; height: 100%; margin-right: 25px; margin-top: -100px;">
+            <span style="margin: 0; ;">50</span>
+            <span style="margin: 0; ">25</span>
+            <span style="margin: 0; ">0</span>
+        </div>
+    </div>
+</div>
+    
+            <div class="folium-map" id="map_76c7cfee41f0a7ea03073a09edf170cc" ></div>
         
 </body>
 <script>
     
     
-            var map_4654721d399c25e428cd0f12b1d462ba = L.map(
-                "map_4654721d399c25e428cd0f12b1d462ba",
+            var map_76c7cfee41f0a7ea03073a09edf170cc = L.map(
+                "map_76c7cfee41f0a7ea03073a09edf170cc",
                 {
                     center: [40.63, 28.12],
                     crs: L.CRS.EPSG3857,
@@ -63,129 +78,63 @@
 
         
     
-            var tile_layer_132607f786af6e56ef72f6a35ff90466 = L.tileLayer(
+            var tile_layer_9cc635c06f69c42d35aa7f42968b5e0c = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_132607f786af6e56ef72f6a35ff90466.addTo(map_4654721d399c25e428cd0f12b1d462ba);
+            tile_layer_9cc635c06f69c42d35aa7f42968b5e0c.addTo(map_76c7cfee41f0a7ea03073a09edf170cc);
         
     
-            var tile_layer_c728d79a210d77584ac6d38687623145 = L.tileLayer(
+            var tile_layer_c8e68a2e2a56bb3050263eac929c48b6 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_916032fe4de073d2e2850500c697d32f = new L.Control.MiniMap(
-                tile_layer_c728d79a210d77584ac6d38687623145,
+            var mini_map_c69554e2e319d9ecb6a19f05b1d8815c = new L.Control.MiniMap(
+                tile_layer_c8e68a2e2a56bb3050263eac929c48b6,
                 {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": true, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
             );
-            map_4654721d399c25e428cd0f12b1d462ba.addControl(mini_map_916032fe4de073d2e2850500c697d32f);
+            map_76c7cfee41f0a7ea03073a09edf170cc.addControl(mini_map_c69554e2e319d9ecb6a19f05b1d8815c);
         
     
-            var heat_map_ab5be98629d6b46850ca1dd3fd3e6c1f = L.heatLayer(
-                [[41.02611, 29.0, 100], [40.90278, 29.0525, 10], [40.42723, 26.73223, 40]],
+            var heat_map_06b9f689b2ba6b534d7c96d581c9c970 = L.heatLayer(
+                [[40.7, 29.94091, 31]],
                 {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
             );
         
     
-            heat_map_ab5be98629d6b46850ca1dd3fd3e6c1f.addTo(map_4654721d399c25e428cd0f12b1d462ba);
+            heat_map_06b9f689b2ba6b534d7c96d581c9c970.addTo(map_76c7cfee41f0a7ea03073a09edf170cc);
         
     
-            var marker_9d86c6d86f29f1ba31519309d0b3d512 = L.marker(
-                [41.02611, 29.0],
+            var marker_8a9404af500f512459e2070b8892ebbc = L.marker(
+                [40.7, 29.94091],
                 {}
-            ).addTo(map_4654721d399c25e428cd0f12b1d462ba);
+            ).addTo(map_76c7cfee41f0a7ea03073a09edf170cc);
         
     
-            var div_icon_0f967fdde46271eac7bfbef2fdef2fa7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 20px; height: 20px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
-            marker_9d86c6d86f29f1ba31519309d0b3d512.setIcon(div_icon_0f967fdde46271eac7bfbef2fdef2fa7);
+            var div_icon_514db6809a6ff1e1287f87de51a26847 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 20px; height: 20px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [2, 2]});
+            marker_8a9404af500f512459e2070b8892ebbc.setIcon(div_icon_514db6809a6ff1e1287f87de51a26847);
         
     
-        var popup_b34192b75932d2f047459f4bf73e80f8 = L.popup({"maxWidth": "100%"});
+        var popup_81a92431af6721afab9589f73d1423fb = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_d97e825c52e7becdd84d76ad90537b83 = $(`<div id="html_d97e825c52e7becdd84d76ad90537b83" style="width: 100.0%; height: 100.0%;">Location1: 100 studies</div>`)[0];
-                popup_b34192b75932d2f047459f4bf73e80f8.setContent(html_d97e825c52e7becdd84d76ad90537b83);
+                var html_5834799816fb8df0f5c9c611cd2be6a3 = $(`<div id="html_5834799816fb8df0f5c9c611cd2be6a3" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>İzmit Körfezi</b>: Marmara Denizi konulu 31 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_81a92431af6721afab9589f73d1423fb.setContent(html_5834799816fb8df0f5c9c611cd2be6a3);
             
         
 
-        marker_9d86c6d86f29f1ba31519309d0b3d512.bindPopup(popup_b34192b75932d2f047459f4bf73e80f8)
+        marker_8a9404af500f512459e2070b8892ebbc.bindPopup(popup_81a92431af6721afab9589f73d1423fb)
         ;
 
         
     
     
-            marker_9d86c6d86f29f1ba31519309d0b3d512.bindTooltip(
+            marker_8a9404af500f512459e2070b8892ebbc.bindTooltip(
                 `<div>
-                     Location1
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_3384d34df8b005ca28e1fd69153b55ed = L.marker(
-                [40.90278, 29.0525],
-                {}
-            ).addTo(map_4654721d399c25e428cd0f12b1d462ba);
-        
-    
-            var div_icon_14e824750cf0db1d02d967c089f8ce45 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 20px; height: 20px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
-            marker_3384d34df8b005ca28e1fd69153b55ed.setIcon(div_icon_14e824750cf0db1d02d967c089f8ce45);
-        
-    
-        var popup_d68d5703d540460e4f4c453b016050d5 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_f56985665597b59cfb7afbccb1f74640 = $(`<div id="html_f56985665597b59cfb7afbccb1f74640" style="width: 100.0%; height: 100.0%;">Location2: 10 studies</div>`)[0];
-                popup_d68d5703d540460e4f4c453b016050d5.setContent(html_f56985665597b59cfb7afbccb1f74640);
-            
-        
-
-        marker_3384d34df8b005ca28e1fd69153b55ed.bindPopup(popup_d68d5703d540460e4f4c453b016050d5)
-        ;
-
-        
-    
-    
-            marker_3384d34df8b005ca28e1fd69153b55ed.bindTooltip(
-                `<div>
-                     Location2
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_6bd82a5daeb2cb13dd552304918ee985 = L.marker(
-                [40.42723, 26.73223],
-                {}
-            ).addTo(map_4654721d399c25e428cd0f12b1d462ba);
-        
-    
-            var div_icon_7548c3c573d6b3848197b0e038946d33 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 20px; height: 20px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [20, 20]});
-            marker_6bd82a5daeb2cb13dd552304918ee985.setIcon(div_icon_7548c3c573d6b3848197b0e038946d33);
-        
-    
-        var popup_3eeb1d8d0b6437c1831692719cbbba4a = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_278349ba7902cd8771fee1728ce616b4 = $(`<div id="html_278349ba7902cd8771fee1728ce616b4" style="width: 100.0%; height: 100.0%;">Location3: 40 studies</div>`)[0];
-                popup_3eeb1d8d0b6437c1831692719cbbba4a.setContent(html_278349ba7902cd8771fee1728ce616b4);
-            
-        
-
-        marker_6bd82a5daeb2cb13dd552304918ee985.bindPopup(popup_3eeb1d8d0b6437c1831692719cbbba4a)
-        ;
-
-        
-    
-    
-            marker_6bd82a5daeb2cb13dd552304918ee985.bindTooltip(
-                `<div>
-                     Location3
+                     İzmit Körfezi
                  </div>`,
                 {"sticky": true}
             );
