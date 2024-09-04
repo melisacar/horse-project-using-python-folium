@@ -1,6 +1,7 @@
 import folium 
 import pandas as pd
 from folium.plugins import HeatMap
+from folium import DivIcon
 
 #Latitude and longitude information of locations and research numbers in each location
 locations = [
@@ -25,7 +26,12 @@ for loc in locations:
         location=[loc['lat'], loc['lon']],
         popup=f"{loc['name']}: {loc['research_count']} studies",
         tooltip=loc['name'],
-        icon=folium.Icon(color='black', icon='info-sign')
+        #icon=folium.Icon(color='lightgray', icon='info-sign'),
+        icon=DivIcon(
+            icon_size=(20, 20),  # Icon size (width, height)
+            icon_anchor=(10, 10),  # Position of the icon relative to its point
+            html=f'<div style="background-color: lightgray; width: 20px; height: 20px; border-radius: 50%; opacity: 0.5;"></div>'
+        )
     ).add_to(heat_map)
 
 heat_map.save("heat_map.html")
