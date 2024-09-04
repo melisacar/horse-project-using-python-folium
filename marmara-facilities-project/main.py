@@ -1,6 +1,7 @@
 #pip install folium
 import folium
 from folium.plugins import MiniMap
+from branca.element import Template, MacroElement
 
 #Coordinates and relative informations 
 fac = [
@@ -43,7 +44,7 @@ for facility in fac_2:
     folium.Marker(
         location=[facility['lat'], facility['lon']],
         popup=folium.Popup(facility['detail'], max_width=200),  #Balloon that opens when clicked
-        icon=folium.Icon(color = 'gray', icon = 'info-sign', prefix = 'glyphicon'),
+        icon=folium.Icon(color = 'lightgray', icon = 'info-sign', prefix = 'glyphicon'),
         tooltip=facility['name'],  #Note balloon that appears when hovering over it with the mouse
     ).add_to(marmara_region_map)
 
@@ -55,6 +56,25 @@ for facility in fac_3:
         icon=folium.Icon(color= 'green', icon = 'trash', prefix = 'glyphicon'),
         tooltip=facility['name'],  #Note balloon that appears when hovering over it with the mouse
     ).add_to(marmara_region_map)
+
+
+
+# Creating a custom legend
+legend_html = '''
+<div style="position: fixed;
+            top: 25px; right: 25px; width: 250px; height: 90px;
+            background-color: white; z-index:9999; font-size:12px;
+            border:2px white; padding: 10px;">
+    <h4>Legend</h4>
+    <i class="fa fa-tint" style="color:blue"></i> Wastewater Facilities<br>
+    <i class="fa fa-trash" style="color:green"></i> Solid Waste Facilities<br>
+    <i class="fa fa-info-circle" style="color:lightgray"></i> Energy Production Facilities
+</div>
+'''
+marmara_region_map.get_root().html.add_child(folium.Element(legend_html))
+
+
+
 
 #Saving the map
 marmara_region_map.save("marmara_waste_facilities_map.html")
