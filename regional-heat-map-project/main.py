@@ -31,7 +31,7 @@ for loc in locations:
         popup=f"{loc['name']}: {loc['research_count']} studies",
         tooltip=loc['name'],
         icon=DivIcon(
-            icon_size=(20, 20),  # Icon size (width, height)
+            icon_size=(10, 10),  # Icon size (width, height)
             icon_anchor=(10, 10),  # Position of the icon relative to its point
             html=f'<div style="background-color: lightgray; width: 20px; height: 20px; border-radius: 50%; opacity: 0.5;"></div>'
         )
