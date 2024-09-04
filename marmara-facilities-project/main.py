@@ -1,6 +1,6 @@
 #pip install folium
 import folium
-
+from folium.plugins import MiniMap
 
 #Coordinates and relative informations 
 fac = [
@@ -21,6 +21,9 @@ fac_3 = [
 
 #Creating the map
 marmara_region_map = folium.Map(location=[40.63, 28.12], tiles='Cartodb Positron', zoom_start=8)
+
+#Add minimap
+MiniMap(toggle_display=True).add_to(marmara_region_map)
 
 #Setting the boundaries
 bounds = [[40.0, 26.5], [41.5, 30.0]]
