@@ -1,0 +1,40 @@
+name: Check for typos
+
+on:
+  workflow_dispatch:  # Enables manual triggering
+  push:
+    branches:
+      - main
+
+jobs:
+  typo_check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run typo check
+        uses: crate-ci/typos-action@v1
+        with:
+          files: '**/*.md'   # Example of file patterns to check (optional)
+          isolated: false  # Set to true if you want to ignore implicit config files
+          write_changes: true  # Writes changes to the local checkout
+
+      - name: Commit and Push changes
+        if: steps.typo_check.outputs.changed == 'true'
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git checkout -b typo-fixes
+          git commit -m "fix: automatically correct pre-commit issues"
+          git push origin typo-fixes
+
+      - name: Create Pull Request
+        if: steps.typo_check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          branch: typo-fixes
+          title: "Fix typos"
+          body: "This PR fixes typos found by the typo-check workflow."
+          commit-message: "fix: automatically correct pre-commit issues"
+          labels: typo, automated
