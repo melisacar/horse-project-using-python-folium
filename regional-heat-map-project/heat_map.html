@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_76c7cfee41f0a7ea03073a09edf170cc {
+                #map_08fa4526ed90667432435ce8afac2a37 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -57,14 +57,14 @@
     </div>
 </div>
     
-            <div class="folium-map" id="map_76c7cfee41f0a7ea03073a09edf170cc" ></div>
+            <div class="folium-map" id="map_08fa4526ed90667432435ce8afac2a37" ></div>
         
 </body>
 <script>
     
     
-            var map_76c7cfee41f0a7ea03073a09edf170cc = L.map(
-                "map_76c7cfee41f0a7ea03073a09edf170cc",
+            var map_08fa4526ed90667432435ce8afac2a37 = L.map(
+                "map_08fa4526ed90667432435ce8afac2a37",
                 {
                     center: [40.63, 28.12],
                     crs: L.CRS.EPSG3857,
@@ -78,63 +78,2802 @@
 
         
     
-            var tile_layer_9cc635c06f69c42d35aa7f42968b5e0c = L.tileLayer(
+            var tile_layer_c065846d78ef8627037592ef39ff9ce5 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
             );
         
     
-            tile_layer_9cc635c06f69c42d35aa7f42968b5e0c.addTo(map_76c7cfee41f0a7ea03073a09edf170cc);
+            tile_layer_c065846d78ef8627037592ef39ff9ce5.addTo(map_08fa4526ed90667432435ce8afac2a37);
         
     
-            var tile_layer_c8e68a2e2a56bb3050263eac929c48b6 = L.tileLayer(
+            var tile_layer_8fa517d7437b6ea6f1cdcb41ec91a9c3 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_c69554e2e319d9ecb6a19f05b1d8815c = new L.Control.MiniMap(
-                tile_layer_c8e68a2e2a56bb3050263eac929c48b6,
+            var mini_map_b6648c708728e5d4a50dfd1d5a33e45f = new L.Control.MiniMap(
+                tile_layer_8fa517d7437b6ea6f1cdcb41ec91a9c3,
                 {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": true, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
             );
-            map_76c7cfee41f0a7ea03073a09edf170cc.addControl(mini_map_c69554e2e319d9ecb6a19f05b1d8815c);
+            map_08fa4526ed90667432435ce8afac2a37.addControl(mini_map_b6648c708728e5d4a50dfd1d5a33e45f);
         
     
-            var heat_map_06b9f689b2ba6b534d7c96d581c9c970 = L.heatLayer(
-                [[40.7, 29.94091, 31]],
+            var heat_map_d91f0909a9c5e4de8f3a5df6e6e1ec6c = L.heatLayer(
+                [[40.74305, 29.90333, 31], [40.4, 28.016667, 12], [40.55893, 26.45934, 1], [40.2, 26.4, 22], [41.00104, 28.94979, 4], [40.8813, 29.06707, 3], [40.43142, 29.15324, 8], [41.029167, 28.961111, 20], [40.65493, 29.28378, 11], [39.91395, 28.15687, 1], [41.119444, 29.075278, 18], [40.14371, 27.6548, 1], [40.366667, 27.666667, 13], [40.885, 29.351111, 4], [40.443611, 29.508333, 4], [41.005556, 28.746944, 6], [40.183333, 29.066667, 6], [40.852, 29.878, 9], [40.966667, 27.5, 15], [41.34, 28.571111, 1], [40.880278, 29.095, 12], [41.016667, 29.0, 36], [41.0, 28.95, 4], [41.5175, 29.13306, 11], [40.151944, 26.405556, 7], [40.969722, 27.955278, 6], [40.45949, 27.85172, 9], [40.913056, 29.05, 4], [35.37075, 30.16892, 6], [39.64056, 25.64472, 6], [40.857778, 29.12, 1], [39.71619, 28.16999, 1], [40.299444, 28.457222, 2], [41.083333, 31.116667, 1], [40.478611, 27.615278, 1], [41.0, 28.8, 1], [40.979167, 28.721389, 1], [40.869444, 27.458333, 1], [40.798105, 27.365073, 1], [40.392222, 28.794444, 1], [40.910278, 29.296111, 2], [40.431667, 29.156111, 9], [40.5, 27.566667, 4], [40.616667, 27.616667, 1], [40.398611, 27.793056, 3], [40.39405, 28.51041, 1], [40.603889, 27.106389, 5], [41.031111, 28.548333, 4], [40.413889, 26.670278, 2], [40.343889, 26.683611, 1], [40.403611, 27.303889, 2], [40.450472, 27.752028, 4], [40.956111, 29.16, 2], [40.183889, 26.35638, 1], [40.376389, 28.88333, 1], [41.125, 29.105556, 1], [40.983056, 28.853611, 2], [40.877778, 29.091667, 1], [40.83334, 28.333333, 1], [40.983056, 28.853611, 1], [40.964722, 28.674444, 3], [41.016667, 29.016667, 2], [41.016667, 29.016667, 3], [40.642222, 29.120278, 9], [40.013333, 26.331944, 1], [40.072222, 30.161111, 1], [40.7597, 29.3856, 3], [39.740833, 27.819167, 4], [40.415655, 27.067543, 3], [40.958333, 29.095556, 1], [40.3662, 28.9008, 1], [40.8, 29.433333, 2], [41.681111, 27.471389, 1], [39.304722, 29.59, 1], [40.90198, 29.14998, 1], [40.974444, 29.043611, 1], [41.676944, 26.555556, 1], [40.790833, 26.555556, 1], [40.876667, 28.966667, 1], [40.978333, 29.040278, 6], [40.906389, 29.210833, 1], [41.013056, 28.953611, 1], [41.073889, 28.246389, 8], [40.986944, 29.036667, 2]],
                 {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
             );
         
     
-            heat_map_06b9f689b2ba6b534d7c96d581c9c970.addTo(map_76c7cfee41f0a7ea03073a09edf170cc);
+            heat_map_d91f0909a9c5e4de8f3a5df6e6e1ec6c.addTo(map_08fa4526ed90667432435ce8afac2a37);
         
     
-            var marker_8a9404af500f512459e2070b8892ebbc = L.marker(
-                [40.7, 29.94091],
+            var marker_0314bcc5467f74c4fb5640e13cc0e55a = L.marker(
+                [40.74305, 29.90333],
                 {}
-            ).addTo(map_76c7cfee41f0a7ea03073a09edf170cc);
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
         
     
-            var div_icon_514db6809a6ff1e1287f87de51a26847 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 20px; height: 20px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [10, 10], "iconSize": [2, 2]});
-            marker_8a9404af500f512459e2070b8892ebbc.setIcon(div_icon_514db6809a6ff1e1287f87de51a26847);
+            var div_icon_d5d45db5e17f3c2bfcba2a5a58e4e642 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_0314bcc5467f74c4fb5640e13cc0e55a.setIcon(div_icon_d5d45db5e17f3c2bfcba2a5a58e4e642);
         
     
-        var popup_81a92431af6721afab9589f73d1423fb = L.popup({"maxWidth": "100%"});
+        var popup_2c28bed697c7634b6a73cd7bb9a2c9cc = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_5834799816fb8df0f5c9c611cd2be6a3 = $(`<div id="html_5834799816fb8df0f5c9c611cd2be6a3" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>İzmit Körfezi</b>: Marmara Denizi konulu 31 bilimsel araştırma bulunmaktadır.</div>`)[0];
-                popup_81a92431af6721afab9589f73d1423fb.setContent(html_5834799816fb8df0f5c9c611cd2be6a3);
+                var html_fe5413b42e48af2dc71938f927e80344 = $(`<div id="html_fe5413b42e48af2dc71938f927e80344" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>İzmit Körfezi</b>: Marmara Denizi konulu 31 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_2c28bed697c7634b6a73cd7bb9a2c9cc.setContent(html_fe5413b42e48af2dc71938f927e80344);
             
         
 
-        marker_8a9404af500f512459e2070b8892ebbc.bindPopup(popup_81a92431af6721afab9589f73d1423fb)
+        marker_0314bcc5467f74c4fb5640e13cc0e55a.bindPopup(popup_2c28bed697c7634b6a73cd7bb9a2c9cc)
         ;
 
         
     
     
-            marker_8a9404af500f512459e2070b8892ebbc.bindTooltip(
+            marker_0314bcc5467f74c4fb5640e13cc0e55a.bindTooltip(
                 `<div>
                      İzmit Körfezi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_164456c2af0624a4a1382397a01e763a = L.marker(
+                [40.4, 28.016667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_6256a1fac1e882767ddd79d7c1422aec = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_164456c2af0624a4a1382397a01e763a.setIcon(div_icon_6256a1fac1e882767ddd79d7c1422aec);
+        
+    
+        var popup_428348a0e63b7df81471ebba54b3406c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f73feef1b4913ef941ebd7653936463 = $(`<div id="html_9f73feef1b4913ef941ebd7653936463" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Bandırma Körfezi</b>: Marmara Denizi konulu 12 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_428348a0e63b7df81471ebba54b3406c.setContent(html_9f73feef1b4913ef941ebd7653936463);
+            
+        
+
+        marker_164456c2af0624a4a1382397a01e763a.bindPopup(popup_428348a0e63b7df81471ebba54b3406c)
+        ;
+
+        
+    
+    
+            marker_164456c2af0624a4a1382397a01e763a.bindTooltip(
+                `<div>
+                     Bandırma Körfezi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f6819c11a615daaba614f99fc5ce761 = L.marker(
+                [40.55893, 26.45934],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_17140345199a6c2edce27341054fa5a1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_4f6819c11a615daaba614f99fc5ce761.setIcon(div_icon_17140345199a6c2edce27341054fa5a1);
+        
+    
+        var popup_0afd800cf6fb6229b3de9ff5898eae28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b55852b37cc87d378934de6e6dc7ac2e = $(`<div id="html_b55852b37cc87d378934de6e6dc7ac2e" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Saros Körfezi</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_0afd800cf6fb6229b3de9ff5898eae28.setContent(html_b55852b37cc87d378934de6e6dc7ac2e);
+            
+        
+
+        marker_4f6819c11a615daaba614f99fc5ce761.bindPopup(popup_0afd800cf6fb6229b3de9ff5898eae28)
+        ;
+
+        
+    
+    
+            marker_4f6819c11a615daaba614f99fc5ce761.bindTooltip(
+                `<div>
+                     Saros Körfezi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9106b843c038c28ffc9ffa99b34d3726 = L.marker(
+                [40.2, 26.4],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_2cb4c13dac0adc78b22933f327becaf6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_9106b843c038c28ffc9ffa99b34d3726.setIcon(div_icon_2cb4c13dac0adc78b22933f327becaf6);
+        
+    
+        var popup_d333803c3747a90b74c82422577fe0b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96e61d9e764a98eb58a4b8c3824a9884 = $(`<div id="html_96e61d9e764a98eb58a4b8c3824a9884" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Çanakkale Boğazı</b>: Marmara Denizi konulu 22 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_d333803c3747a90b74c82422577fe0b3.setContent(html_96e61d9e764a98eb58a4b8c3824a9884);
+            
+        
+
+        marker_9106b843c038c28ffc9ffa99b34d3726.bindPopup(popup_d333803c3747a90b74c82422577fe0b3)
+        ;
+
+        
+    
+    
+            marker_9106b843c038c28ffc9ffa99b34d3726.bindTooltip(
+                `<div>
+                     Çanakkale Boğazı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_297d8bd54c816f8575344723e0bc2fcf = L.marker(
+                [41.00104, 28.94979],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_c6489ac039022c16410cbaa4712c582f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_297d8bd54c816f8575344723e0bc2fcf.setIcon(div_icon_c6489ac039022c16410cbaa4712c582f);
+        
+    
+        var popup_2f6f07b6e0250e4d6fa789d91b94259b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e204a37ed248fa368d05147a736301f = $(`<div id="html_2e204a37ed248fa368d05147a736301f" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Yenikapı</b>: Marmara Denizi konulu 4 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_2f6f07b6e0250e4d6fa789d91b94259b.setContent(html_2e204a37ed248fa368d05147a736301f);
+            
+        
+
+        marker_297d8bd54c816f8575344723e0bc2fcf.bindPopup(popup_2f6f07b6e0250e4d6fa789d91b94259b)
+        ;
+
+        
+    
+    
+            marker_297d8bd54c816f8575344723e0bc2fcf.bindTooltip(
+                `<div>
+                     Yenikapı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_296801a33a8b55e01a46240b41a92b2e = L.marker(
+                [40.8813, 29.06707],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_afc8190962b02b0c87577cf108922a4b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_296801a33a8b55e01a46240b41a92b2e.setIcon(div_icon_afc8190962b02b0c87577cf108922a4b);
+        
+    
+        var popup_89b3d9f623991c7b142de57bce3703a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9bcb9b741e3a14ac4cef014b4eb8e24 = $(`<div id="html_f9bcb9b741e3a14ac4cef014b4eb8e24" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Burgaz Adası</b>: Marmara Denizi konulu 3 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_89b3d9f623991c7b142de57bce3703a9.setContent(html_f9bcb9b741e3a14ac4cef014b4eb8e24);
+            
+        
+
+        marker_296801a33a8b55e01a46240b41a92b2e.bindPopup(popup_89b3d9f623991c7b142de57bce3703a9)
+        ;
+
+        
+    
+    
+            marker_296801a33a8b55e01a46240b41a92b2e.bindTooltip(
+                `<div>
+                     Burgaz Adası
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd343428245f195acf23c99562d3f49e = L.marker(
+                [40.43142, 29.15324],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_689bebde6e9f6f1dd9e684e2db0a4f9b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_cd343428245f195acf23c99562d3f49e.setIcon(div_icon_689bebde6e9f6f1dd9e684e2db0a4f9b);
+        
+    
+        var popup_9a62f401d20e24c4c8d7491d6d3f0e91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2dd72c5553e9d85db17d6efdd9e58b3 = $(`<div id="html_c2dd72c5553e9d85db17d6efdd9e58b3" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Gemlik Körfezi</b>: Marmara Denizi konulu 8 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_9a62f401d20e24c4c8d7491d6d3f0e91.setContent(html_c2dd72c5553e9d85db17d6efdd9e58b3);
+            
+        
+
+        marker_cd343428245f195acf23c99562d3f49e.bindPopup(popup_9a62f401d20e24c4c8d7491d6d3f0e91)
+        ;
+
+        
+    
+    
+            marker_cd343428245f195acf23c99562d3f49e.bindTooltip(
+                `<div>
+                     Gemlik Körfezi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f98ca7b8ff4a71997d461aba1c3d386f = L.marker(
+                [41.029167, 28.961111],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_280f9343e3d8b9ec999e49a4c081e97b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_f98ca7b8ff4a71997d461aba1c3d386f.setIcon(div_icon_280f9343e3d8b9ec999e49a4c081e97b);
+        
+    
+        var popup_e944551ac78548239b518c830cf8bbc8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f5d2e901e14c8a9145c41c86fcf7b97 = $(`<div id="html_8f5d2e901e14c8a9145c41c86fcf7b97" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Haliç</b>: Marmara Denizi konulu 20 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_e944551ac78548239b518c830cf8bbc8.setContent(html_8f5d2e901e14c8a9145c41c86fcf7b97);
+            
+        
+
+        marker_f98ca7b8ff4a71997d461aba1c3d386f.bindPopup(popup_e944551ac78548239b518c830cf8bbc8)
+        ;
+
+        
+    
+    
+            marker_f98ca7b8ff4a71997d461aba1c3d386f.bindTooltip(
+                `<div>
+                     Haliç
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccb9ddcf7d11e5717b8d706791031b7f = L.marker(
+                [40.65493, 29.28378],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_2a84ae867b718b3692cf32d33a1e1d58 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_ccb9ddcf7d11e5717b8d706791031b7f.setIcon(div_icon_2a84ae867b718b3692cf32d33a1e1d58);
+        
+    
+        var popup_f2a15ffe0095065fa0a1c4d425c8c3f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f81283c22f57a000c2011e84099da734 = $(`<div id="html_f81283c22f57a000c2011e84099da734" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Yalova</b>: Marmara Denizi konulu 11 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_f2a15ffe0095065fa0a1c4d425c8c3f0.setContent(html_f81283c22f57a000c2011e84099da734);
+            
+        
+
+        marker_ccb9ddcf7d11e5717b8d706791031b7f.bindPopup(popup_f2a15ffe0095065fa0a1c4d425c8c3f0)
+        ;
+
+        
+    
+    
+            marker_ccb9ddcf7d11e5717b8d706791031b7f.bindTooltip(
+                `<div>
+                     Yalova
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc78492ecaeb040d525347105d0492af = L.marker(
+                [39.91395, 28.15687],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_d628922b662f81ae8ec6f5dd59775763 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_fc78492ecaeb040d525347105d0492af.setIcon(div_icon_d628922b662f81ae8ec6f5dd59775763);
+        
+    
+        var popup_89ef2f61dd25ffed63c70a50317512c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff56391943d416fceb7a85f94de1a1f0 = $(`<div id="html_ff56391943d416fceb7a85f94de1a1f0" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Susurluk Havzası</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_89ef2f61dd25ffed63c70a50317512c1.setContent(html_ff56391943d416fceb7a85f94de1a1f0);
+            
+        
+
+        marker_fc78492ecaeb040d525347105d0492af.bindPopup(popup_89ef2f61dd25ffed63c70a50317512c1)
+        ;
+
+        
+    
+    
+            marker_fc78492ecaeb040d525347105d0492af.bindTooltip(
+                `<div>
+                     Susurluk Havzası
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c811989e245b521c79ab8affac45e6cf = L.marker(
+                [41.119444, 29.075278],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_0358fe60d6ac5f99b58e3005817b26c1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_c811989e245b521c79ab8affac45e6cf.setIcon(div_icon_0358fe60d6ac5f99b58e3005817b26c1);
+        
+    
+        var popup_ab461c20685af04ef2dc34421fb58459 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc01998025cec5e021a8a2a6037e0bf9 = $(`<div id="html_fc01998025cec5e021a8a2a6037e0bf9" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>İstanbul Boğazı</b>: Marmara Denizi konulu 18 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_ab461c20685af04ef2dc34421fb58459.setContent(html_fc01998025cec5e021a8a2a6037e0bf9);
+            
+        
+
+        marker_c811989e245b521c79ab8affac45e6cf.bindPopup(popup_ab461c20685af04ef2dc34421fb58459)
+        ;
+
+        
+    
+    
+            marker_c811989e245b521c79ab8affac45e6cf.bindTooltip(
+                `<div>
+                     İstanbul Boğazı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f64d240d286f5bfdc4b3a5f3475a15b = L.marker(
+                [40.14371, 27.6548],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_0247fef3d6993ce61891c562a3dd7366 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_6f64d240d286f5bfdc4b3a5f3475a15b.setIcon(div_icon_0247fef3d6993ce61891c562a3dd7366);
+        
+    
+        var popup_76953f5c202b9461788dff0681ef2dab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_065f5e3969e96caf699cc3c313885743 = $(`<div id="html_065f5e3969e96caf699cc3c313885743" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Gönen Çayı</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_76953f5c202b9461788dff0681ef2dab.setContent(html_065f5e3969e96caf699cc3c313885743);
+            
+        
+
+        marker_6f64d240d286f5bfdc4b3a5f3475a15b.bindPopup(popup_76953f5c202b9461788dff0681ef2dab)
+        ;
+
+        
+    
+    
+            marker_6f64d240d286f5bfdc4b3a5f3475a15b.bindTooltip(
+                `<div>
+                     Gönen Çayı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b4be896a5c8cdd9b501c3820cb7c67d = L.marker(
+                [40.366667, 27.666667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_f2b715d61c719106da72880899d5441e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_2b4be896a5c8cdd9b501c3820cb7c67d.setIcon(div_icon_f2b715d61c719106da72880899d5441e);
+        
+    
+        var popup_78694afb0189190e7594ff8c146af0e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a7236a065c6773371a5681dfd63a39b = $(`<div id="html_2a7236a065c6773371a5681dfd63a39b" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Erdek Körfezi</b>: Marmara Denizi konulu 13 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_78694afb0189190e7594ff8c146af0e7.setContent(html_2a7236a065c6773371a5681dfd63a39b);
+            
+        
+
+        marker_2b4be896a5c8cdd9b501c3820cb7c67d.bindPopup(popup_78694afb0189190e7594ff8c146af0e7)
+        ;
+
+        
+    
+    
+            marker_2b4be896a5c8cdd9b501c3820cb7c67d.bindTooltip(
+                `<div>
+                     Erdek Körfezi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58f228dfbdb5b4d0770eafaf4ef1854f = L.marker(
+                [40.885, 29.351111],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_6e7526b96a4ab831c755d377f7b4ab5e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_58f228dfbdb5b4d0770eafaf4ef1854f.setIcon(div_icon_6e7526b96a4ab831c755d377f7b4ab5e);
+        
+    
+        var popup_134aea3ae0a7df16d851596646d162cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8312ba91340299664abc4f40b5e0153 = $(`<div id="html_e8312ba91340299664abc4f40b5e0153" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Tuzla</b>: Marmara Denizi konulu 4 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_134aea3ae0a7df16d851596646d162cc.setContent(html_e8312ba91340299664abc4f40b5e0153);
+            
+        
+
+        marker_58f228dfbdb5b4d0770eafaf4ef1854f.bindPopup(popup_134aea3ae0a7df16d851596646d162cc)
+        ;
+
+        
+    
+    
+            marker_58f228dfbdb5b4d0770eafaf4ef1854f.bindTooltip(
+                `<div>
+                     Tuzla
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea67d3426fc6dd0a37aff16f76ad0ab7 = L.marker(
+                [40.443611, 29.508333],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_67c62a87a76453d5cdbcc56a8de72e1d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_ea67d3426fc6dd0a37aff16f76ad0ab7.setIcon(div_icon_67c62a87a76453d5cdbcc56a8de72e1d);
+        
+    
+        var popup_719e082bdec44988cfcb53df60554bb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0ae0ee1aa9bdb6ad5dfeaa008f745e6 = $(`<div id="html_b0ae0ee1aa9bdb6ad5dfeaa008f745e6" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>İznik Gölü</b>: Marmara Denizi konulu 4 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_719e082bdec44988cfcb53df60554bb1.setContent(html_b0ae0ee1aa9bdb6ad5dfeaa008f745e6);
+            
+        
+
+        marker_ea67d3426fc6dd0a37aff16f76ad0ab7.bindPopup(popup_719e082bdec44988cfcb53df60554bb1)
+        ;
+
+        
+    
+    
+            marker_ea67d3426fc6dd0a37aff16f76ad0ab7.bindTooltip(
+                `<div>
+                     İznik Gölü
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6224a2be7b5c270d04bf9d80033db60 = L.marker(
+                [41.005556, 28.746944],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_c1f5babbf53aed5c4c3f6ca32f13949b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_e6224a2be7b5c270d04bf9d80033db60.setIcon(div_icon_c1f5babbf53aed5c4c3f6ca32f13949b);
+        
+    
+        var popup_a8040eb902fedf8ff4bf09ba62c993e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9c54c0792b419483c40c4cfaef8930d = $(`<div id="html_e9c54c0792b419483c40c4cfaef8930d" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Küçükçekmece Gölü</b>: Marmara Denizi konulu 6 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_a8040eb902fedf8ff4bf09ba62c993e1.setContent(html_e9c54c0792b419483c40c4cfaef8930d);
+            
+        
+
+        marker_e6224a2be7b5c270d04bf9d80033db60.bindPopup(popup_a8040eb902fedf8ff4bf09ba62c993e1)
+        ;
+
+        
+    
+    
+            marker_e6224a2be7b5c270d04bf9d80033db60.bindTooltip(
+                `<div>
+                     Küçükçekmece Gölü
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e554ef3a66e966f72293be88b3db6e3b = L.marker(
+                [40.183333, 29.066667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_b2f55fe5a7aac88a00a698364d15229d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_e554ef3a66e966f72293be88b3db6e3b.setIcon(div_icon_b2f55fe5a7aac88a00a698364d15229d);
+        
+    
+        var popup_95c158d864e62a88ef7cc8ddea07ada0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdff9305fcddfefd61b86176dbe16b1d = $(`<div id="html_bdff9305fcddfefd61b86176dbe16b1d" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Bursa</b>: Marmara Denizi konulu 6 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_95c158d864e62a88ef7cc8ddea07ada0.setContent(html_bdff9305fcddfefd61b86176dbe16b1d);
+            
+        
+
+        marker_e554ef3a66e966f72293be88b3db6e3b.bindPopup(popup_95c158d864e62a88ef7cc8ddea07ada0)
+        ;
+
+        
+    
+    
+            marker_e554ef3a66e966f72293be88b3db6e3b.bindTooltip(
+                `<div>
+                     Bursa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6d9ef4937997f67e9cf2bfba75766a3 = L.marker(
+                [40.852, 29.878],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_5d42757a6e605729ed7f306a3db2bab3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_b6d9ef4937997f67e9cf2bfba75766a3.setIcon(div_icon_5d42757a6e605729ed7f306a3db2bab3);
+        
+    
+        var popup_5e6603affc9490d3c69c40b99a03dfb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2c4caa66210b2ca63948525b37f7c90 = $(`<div id="html_e2c4caa66210b2ca63948525b37f7c90" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kocaeli</b>: Marmara Denizi konulu 9 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_5e6603affc9490d3c69c40b99a03dfb8.setContent(html_e2c4caa66210b2ca63948525b37f7c90);
+            
+        
+
+        marker_b6d9ef4937997f67e9cf2bfba75766a3.bindPopup(popup_5e6603affc9490d3c69c40b99a03dfb8)
+        ;
+
+        
+    
+    
+            marker_b6d9ef4937997f67e9cf2bfba75766a3.bindTooltip(
+                `<div>
+                     Kocaeli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60645c27939f7143e2d835a2d9bb1784 = L.marker(
+                [40.966667, 27.5],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_6b0ea9a3dd249267cb3802e1bd604faf = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_60645c27939f7143e2d835a2d9bb1784.setIcon(div_icon_6b0ea9a3dd249267cb3802e1bd604faf);
+        
+    
+        var popup_bbeffb0df4b8a1932d8941ec65a0d3c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49d8dc03a58489ac2168253a8c43e1e9 = $(`<div id="html_49d8dc03a58489ac2168253a8c43e1e9" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Tekirdağ</b>: Marmara Denizi konulu 15 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_bbeffb0df4b8a1932d8941ec65a0d3c2.setContent(html_49d8dc03a58489ac2168253a8c43e1e9);
+            
+        
+
+        marker_60645c27939f7143e2d835a2d9bb1784.bindPopup(popup_bbeffb0df4b8a1932d8941ec65a0d3c2)
+        ;
+
+        
+    
+    
+            marker_60645c27939f7143e2d835a2d9bb1784.bindTooltip(
+                `<div>
+                     Tekirdağ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b36aa3d7777273ccdf0769003fb20eef = L.marker(
+                [41.34, 28.571111],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_fa3a59ab3232047716745f871368711e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_b36aa3d7777273ccdf0769003fb20eef.setIcon(div_icon_fa3a59ab3232047716745f871368711e);
+        
+    
+        var popup_99e41d363c20dffc2b6dbf5bd1fdfa03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa0c2d67da2b6e6b8042198babe10a70 = $(`<div id="html_aa0c2d67da2b6e6b8042198babe10a70" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Terkos Gölü</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_99e41d363c20dffc2b6dbf5bd1fdfa03.setContent(html_aa0c2d67da2b6e6b8042198babe10a70);
+            
+        
+
+        marker_b36aa3d7777273ccdf0769003fb20eef.bindPopup(popup_99e41d363c20dffc2b6dbf5bd1fdfa03)
+        ;
+
+        
+    
+    
+            marker_b36aa3d7777273ccdf0769003fb20eef.bindTooltip(
+                `<div>
+                     Terkos Gölü
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ce68c9e27963bb53cc3874c62940e7e = L.marker(
+                [40.880278, 29.095],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_f970fcb382b0d75d5eb8e1c82389f520 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_0ce68c9e27963bb53cc3874c62940e7e.setIcon(div_icon_f970fcb382b0d75d5eb8e1c82389f520);
+        
+    
+        var popup_542346dcbfa94f2a2443b00efb20f0c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd39fd4b327b5cbf3ca34cd148620058 = $(`<div id="html_fd39fd4b327b5cbf3ca34cd148620058" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Adalar</b>: Marmara Denizi konulu 12 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_542346dcbfa94f2a2443b00efb20f0c6.setContent(html_fd39fd4b327b5cbf3ca34cd148620058);
+            
+        
+
+        marker_0ce68c9e27963bb53cc3874c62940e7e.bindPopup(popup_542346dcbfa94f2a2443b00efb20f0c6)
+        ;
+
+        
+    
+    
+            marker_0ce68c9e27963bb53cc3874c62940e7e.bindTooltip(
+                `<div>
+                     Adalar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_197e8d8ed498f6a6fea48bfb60f8a141 = L.marker(
+                [41.016667, 29.0],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_43002d72e335ff4ba550ccd6ff5342d5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_197e8d8ed498f6a6fea48bfb60f8a141.setIcon(div_icon_43002d72e335ff4ba550ccd6ff5342d5);
+        
+    
+        var popup_5dcfa5763b62e715d0cfd553dffe3d49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f094f78031389c7fb5affea2883ca4b5 = $(`<div id="html_f094f78031389c7fb5affea2883ca4b5" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>İstanbul</b>: Marmara Denizi konulu 36 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_5dcfa5763b62e715d0cfd553dffe3d49.setContent(html_f094f78031389c7fb5affea2883ca4b5);
+            
+        
+
+        marker_197e8d8ed498f6a6fea48bfb60f8a141.bindPopup(popup_5dcfa5763b62e715d0cfd553dffe3d49)
+        ;
+
+        
+    
+    
+            marker_197e8d8ed498f6a6fea48bfb60f8a141.bindTooltip(
+                `<div>
+                     İstanbul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_219fcdb137fd2f4d438a0473594e91c7 = L.marker(
+                [41.0, 28.95],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_af0a4daf7b3716d4fb756993cf4e42bf = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_219fcdb137fd2f4d438a0473594e91c7.setIcon(div_icon_af0a4daf7b3716d4fb756993cf4e42bf);
+        
+    
+        var popup_4f5bc9f5f1029a825c7c326a58490169 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a4e66fa0f1768fd645fd41c55b9fc49 = $(`<div id="html_3a4e66fa0f1768fd645fd41c55b9fc49" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Yenikapı</b>: Marmara Denizi konulu 4 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_4f5bc9f5f1029a825c7c326a58490169.setContent(html_3a4e66fa0f1768fd645fd41c55b9fc49);
+            
+        
+
+        marker_219fcdb137fd2f4d438a0473594e91c7.bindPopup(popup_4f5bc9f5f1029a825c7c326a58490169)
+        ;
+
+        
+    
+    
+            marker_219fcdb137fd2f4d438a0473594e91c7.bindTooltip(
+                `<div>
+                     Yenikapı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aeb5c7ad56c7fd89c3096b5917645e93 = L.marker(
+                [41.5175, 29.13306],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_b9eb10d49779244a1d0ce4a9a29a6a4c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_aeb5c7ad56c7fd89c3096b5917645e93.setIcon(div_icon_b9eb10d49779244a1d0ce4a9a29a6a4c);
+        
+    
+        var popup_7a0ec2405e3f9a497ba4b7557b053d35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a620c2bff3042e27a0f668a473cc1fb3 = $(`<div id="html_a620c2bff3042e27a0f668a473cc1fb3" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Karadeniz</b>: Marmara Denizi konulu 11 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_7a0ec2405e3f9a497ba4b7557b053d35.setContent(html_a620c2bff3042e27a0f668a473cc1fb3);
+            
+        
+
+        marker_aeb5c7ad56c7fd89c3096b5917645e93.bindPopup(popup_7a0ec2405e3f9a497ba4b7557b053d35)
+        ;
+
+        
+    
+    
+            marker_aeb5c7ad56c7fd89c3096b5917645e93.bindTooltip(
+                `<div>
+                     Karadeniz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2898046e80fd9f16e09c51b43271820a = L.marker(
+                [40.151944, 26.405556],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_f41d5bf57f9cf9bde4a4648bfe410789 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_2898046e80fd9f16e09c51b43271820a.setIcon(div_icon_f41d5bf57f9cf9bde4a4648bfe410789);
+        
+    
+        var popup_e2c3aa16f1a32828a70c79314db14a07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80d5560e8be61910d99dfbd1cdb052ee = $(`<div id="html_80d5560e8be61910d99dfbd1cdb052ee" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Çanakkale</b>: Marmara Denizi konulu 7 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_e2c3aa16f1a32828a70c79314db14a07.setContent(html_80d5560e8be61910d99dfbd1cdb052ee);
+            
+        
+
+        marker_2898046e80fd9f16e09c51b43271820a.bindPopup(popup_e2c3aa16f1a32828a70c79314db14a07)
+        ;
+
+        
+    
+    
+            marker_2898046e80fd9f16e09c51b43271820a.bindTooltip(
+                `<div>
+                     Çanakkale
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f82bcadfed06070f4925c0ab46f75075 = L.marker(
+                [40.969722, 27.955278],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_ddf8d0dbfd870b07659aab01702b0e22 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_f82bcadfed06070f4925c0ab46f75075.setIcon(div_icon_ddf8d0dbfd870b07659aab01702b0e22);
+        
+    
+        var popup_505e103d94888f8600a359695aa1e756 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_980df8a4387309ceca4f89bfde81c662 = $(`<div id="html_980df8a4387309ceca4f89bfde81c662" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Marmara Ereğlisi</b>: Marmara Denizi konulu 6 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_505e103d94888f8600a359695aa1e756.setContent(html_980df8a4387309ceca4f89bfde81c662);
+            
+        
+
+        marker_f82bcadfed06070f4925c0ab46f75075.bindPopup(popup_505e103d94888f8600a359695aa1e756)
+        ;
+
+        
+    
+    
+            marker_f82bcadfed06070f4925c0ab46f75075.bindTooltip(
+                `<div>
+                     Marmara Ereğlisi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1e2e1e8121f6edc44bb2e6919166d47 = L.marker(
+                [40.45949, 27.85172],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_0c6d596b2dbb184420361f81f9045ac3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_f1e2e1e8121f6edc44bb2e6919166d47.setIcon(div_icon_0c6d596b2dbb184420361f81f9045ac3);
+        
+    
+        var popup_09495c13d0f348e9d46a71baa0052ce0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6de5f4eb9b8e768cd909406fc89e8c8 = $(`<div id="html_b6de5f4eb9b8e768cd909406fc89e8c8" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kapıdağ Yarımadası</b>: Marmara Denizi konulu 9 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_09495c13d0f348e9d46a71baa0052ce0.setContent(html_b6de5f4eb9b8e768cd909406fc89e8c8);
+            
+        
+
+        marker_f1e2e1e8121f6edc44bb2e6919166d47.bindPopup(popup_09495c13d0f348e9d46a71baa0052ce0)
+        ;
+
+        
+    
+    
+            marker_f1e2e1e8121f6edc44bb2e6919166d47.bindTooltip(
+                `<div>
+                     Kapıdağ Yarımadası
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_689441958ff6d801258a1177e238a916 = L.marker(
+                [40.913056, 29.05],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_0b40cdd398b2fd442a1b01e15e690fea = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_689441958ff6d801258a1177e238a916.setIcon(div_icon_0b40cdd398b2fd442a1b01e15e690fea);
+        
+    
+        var popup_7ae85310d482aa27f51dad5f42d6ea62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_058408ebd985831b5bb49f10b90d8107 = $(`<div id="html_058408ebd985831b5bb49f10b90d8107" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kınalıada</b>: Marmara Denizi konulu 4 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_7ae85310d482aa27f51dad5f42d6ea62.setContent(html_058408ebd985831b5bb49f10b90d8107);
+            
+        
+
+        marker_689441958ff6d801258a1177e238a916.bindPopup(popup_7ae85310d482aa27f51dad5f42d6ea62)
+        ;
+
+        
+    
+    
+            marker_689441958ff6d801258a1177e238a916.bindTooltip(
+                `<div>
+                     Kınalıada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_980f2add39efc145e057611a03383528 = L.marker(
+                [35.37075, 30.16892],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_f4b7961f0bf674da11e6d24234aefbba = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_980f2add39efc145e057611a03383528.setIcon(div_icon_f4b7961f0bf674da11e6d24234aefbba);
+        
+    
+        var popup_ea648738b916b245b59498c0eb03a17c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c24906bf33d40f97508233d6a7c45098 = $(`<div id="html_c24906bf33d40f97508233d6a7c45098" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Akdeniz</b>: Marmara Denizi konulu 6 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_ea648738b916b245b59498c0eb03a17c.setContent(html_c24906bf33d40f97508233d6a7c45098);
+            
+        
+
+        marker_980f2add39efc145e057611a03383528.bindPopup(popup_ea648738b916b245b59498c0eb03a17c)
+        ;
+
+        
+    
+    
+            marker_980f2add39efc145e057611a03383528.bindTooltip(
+                `<div>
+                     Akdeniz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f9e9d039e2a28dd228d577b2693f3ce = L.marker(
+                [39.64056, 25.64472],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_dbf28bd99e120864194ec9a52f5b8907 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_7f9e9d039e2a28dd228d577b2693f3ce.setIcon(div_icon_dbf28bd99e120864194ec9a52f5b8907);
+        
+    
+        var popup_513b20868a6c7b50ba2f3d37bf0f735b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22a238c554e554e24bb2b5f9304604cb = $(`<div id="html_22a238c554e554e24bb2b5f9304604cb" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Ege Denizi</b>: Marmara Denizi konulu 6 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_513b20868a6c7b50ba2f3d37bf0f735b.setContent(html_22a238c554e554e24bb2b5f9304604cb);
+            
+        
+
+        marker_7f9e9d039e2a28dd228d577b2693f3ce.bindPopup(popup_513b20868a6c7b50ba2f3d37bf0f735b)
+        ;
+
+        
+    
+    
+            marker_7f9e9d039e2a28dd228d577b2693f3ce.bindTooltip(
+                `<div>
+                     Ege Denizi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57803a2a843a8b521d708c55ce42e7d8 = L.marker(
+                [40.857778, 29.12],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_9e004a876c2f22c1e5d948d61e41d495 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_57803a2a843a8b521d708c55ce42e7d8.setIcon(div_icon_9e004a876c2f22c1e5d948d61e41d495);
+        
+    
+        var popup_4f5db0b9394e23a0de16a5be58611d7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_700ddb737d2d14462e6a3d448062f910 = $(`<div id="html_700ddb737d2d14462e6a3d448062f910" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Büyükada</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_4f5db0b9394e23a0de16a5be58611d7a.setContent(html_700ddb737d2d14462e6a3d448062f910);
+            
+        
+
+        marker_57803a2a843a8b521d708c55ce42e7d8.bindPopup(popup_4f5db0b9394e23a0de16a5be58611d7a)
+        ;
+
+        
+    
+    
+            marker_57803a2a843a8b521d708c55ce42e7d8.bindTooltip(
+                `<div>
+                     Büyükada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5f358c020edc57da4beb630f9f6343e = L.marker(
+                [39.71619, 28.16999],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_b79e6a6aa0238ca3d6de6b80c496afd7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_c5f358c020edc57da4beb630f9f6343e.setIcon(div_icon_b79e6a6aa0238ca3d6de6b80c496afd7);
+        
+    
+        var popup_a804de5e9ad8f59152d0133b12436a1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaaa90f78b5f5763fbbe28c19ebe5be4 = $(`<div id="html_eaaa90f78b5f5763fbbe28c19ebe5be4" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Susurluk Nehri</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_a804de5e9ad8f59152d0133b12436a1b.setContent(html_eaaa90f78b5f5763fbbe28c19ebe5be4);
+            
+        
+
+        marker_c5f358c020edc57da4beb630f9f6343e.bindPopup(popup_a804de5e9ad8f59152d0133b12436a1b)
+        ;
+
+        
+    
+    
+            marker_c5f358c020edc57da4beb630f9f6343e.bindTooltip(
+                `<div>
+                     Susurluk Nehri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af047e7785f8cf3aa35704e5eda8af71 = L.marker(
+                [40.299444, 28.457222],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_e271327dccabbef29ba87385a64d08d5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_af047e7785f8cf3aa35704e5eda8af71.setIcon(div_icon_e271327dccabbef29ba87385a64d08d5);
+        
+    
+        var popup_52259dd121008456bf02e69824b75f74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bd844a00ece774c8cdcf90c6e6b93dd = $(`<div id="html_8bd844a00ece774c8cdcf90c6e6b93dd" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Nilüfer Çayı</b>: Marmara Denizi konulu 2 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_52259dd121008456bf02e69824b75f74.setContent(html_8bd844a00ece774c8cdcf90c6e6b93dd);
+            
+        
+
+        marker_af047e7785f8cf3aa35704e5eda8af71.bindPopup(popup_52259dd121008456bf02e69824b75f74)
+        ;
+
+        
+    
+    
+            marker_af047e7785f8cf3aa35704e5eda8af71.bindTooltip(
+                `<div>
+                     Nilüfer Çayı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b99dff36c54c9297a132bcacd1d8188 = L.marker(
+                [41.083333, 31.116667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_ec36c53f7e4911a4f62ee876334878fd = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_2b99dff36c54c9297a132bcacd1d8188.setIcon(div_icon_ec36c53f7e4911a4f62ee876334878fd);
+        
+    
+        var popup_9b4d853696971aaa7826eae45bc89f2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5174e7db0b84567519d322669f11b04a = $(`<div id="html_5174e7db0b84567519d322669f11b04a" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Akçakoca</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_9b4d853696971aaa7826eae45bc89f2a.setContent(html_5174e7db0b84567519d322669f11b04a);
+            
+        
+
+        marker_2b99dff36c54c9297a132bcacd1d8188.bindPopup(popup_9b4d853696971aaa7826eae45bc89f2a)
+        ;
+
+        
+    
+    
+            marker_2b99dff36c54c9297a132bcacd1d8188.bindTooltip(
+                `<div>
+                     Akçakoca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdae8a427cabfb08a23fc8365672b101 = L.marker(
+                [40.478611, 27.615278],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_b8d851bb852c5491f325d3d5131980f4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_cdae8a427cabfb08a23fc8365672b101.setIcon(div_icon_b8d851bb852c5491f325d3d5131980f4);
+        
+    
+        var popup_09b7b74f5040a262e6d856d26b4c5942 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e122cf0edcbae5f2c82e11309d72c3df = $(`<div id="html_e122cf0edcbae5f2c82e11309d72c3df" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Paşalimanı</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_09b7b74f5040a262e6d856d26b4c5942.setContent(html_e122cf0edcbae5f2c82e11309d72c3df);
+            
+        
+
+        marker_cdae8a427cabfb08a23fc8365672b101.bindPopup(popup_09b7b74f5040a262e6d856d26b4c5942)
+        ;
+
+        
+    
+    
+            marker_cdae8a427cabfb08a23fc8365672b101.bindTooltip(
+                `<div>
+                     Paşalimanı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_657810077684a329a438ff864a9ca788 = L.marker(
+                [41.0, 28.8],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_740ba9d619717f086d30821b65a98da6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_657810077684a329a438ff864a9ca788.setIcon(div_icon_740ba9d619717f086d30821b65a98da6);
+        
+    
+        var popup_7aae1ace058d3989a45874f14b768cc9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ecb9e9312ee29764ec5a2901676028a = $(`<div id="html_4ecb9e9312ee29764ec5a2901676028a" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Küçükçekmece</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_7aae1ace058d3989a45874f14b768cc9.setContent(html_4ecb9e9312ee29764ec5a2901676028a);
+            
+        
+
+        marker_657810077684a329a438ff864a9ca788.bindPopup(popup_7aae1ace058d3989a45874f14b768cc9)
+        ;
+
+        
+    
+    
+            marker_657810077684a329a438ff864a9ca788.bindTooltip(
+                `<div>
+                     Küçükçekmece
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd756bb072b77cf170e4048ff37a760f = L.marker(
+                [40.979167, 28.721389],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_1f2b0eb59871af9f495de278021507aa = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_cd756bb072b77cf170e4048ff37a760f.setIcon(div_icon_1f2b0eb59871af9f495de278021507aa);
+        
+    
+        var popup_92542827b93cb6917e3acf3293b55dad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff0b1ea3591cd921ce798082332b4bda = $(`<div id="html_ff0b1ea3591cd921ce798082332b4bda" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Avcılar</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_92542827b93cb6917e3acf3293b55dad.setContent(html_ff0b1ea3591cd921ce798082332b4bda);
+            
+        
+
+        marker_cd756bb072b77cf170e4048ff37a760f.bindPopup(popup_92542827b93cb6917e3acf3293b55dad)
+        ;
+
+        
+    
+    
+            marker_cd756bb072b77cf170e4048ff37a760f.bindTooltip(
+                `<div>
+                     Avcılar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad80228207dc81402aa2356bc6123036 = L.marker(
+                [40.869444, 27.458333],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_ee67f9f440f89bd7a92aa9a09c2a4870 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_ad80228207dc81402aa2356bc6123036.setIcon(div_icon_ee67f9f440f89bd7a92aa9a09c2a4870);
+        
+    
+        var popup_60c543c484f049ea41568e7e5c18e097 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa0cdf783313e45e1164aa0171d34ab0 = $(`<div id="html_fa0cdf783313e45e1164aa0171d34ab0" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kumbağ</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_60c543c484f049ea41568e7e5c18e097.setContent(html_fa0cdf783313e45e1164aa0171d34ab0);
+            
+        
+
+        marker_ad80228207dc81402aa2356bc6123036.bindPopup(popup_60c543c484f049ea41568e7e5c18e097)
+        ;
+
+        
+    
+    
+            marker_ad80228207dc81402aa2356bc6123036.bindTooltip(
+                `<div>
+                     Kumbağ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_501aad5f7dce599b042a864b5bc9b839 = L.marker(
+                [40.798105, 27.365073],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_0ce744fdb1a5d205718af3a2ee2757ec = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_501aad5f7dce599b042a864b5bc9b839.setIcon(div_icon_0ce744fdb1a5d205718af3a2ee2757ec);
+        
+    
+        var popup_20e49f7e3188ff3344221838260f991e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bba5afea4871f95dd3bff4108e7dbe7 = $(`<div id="html_5bba5afea4871f95dd3bff4108e7dbe7" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Uçmakdere</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_20e49f7e3188ff3344221838260f991e.setContent(html_5bba5afea4871f95dd3bff4108e7dbe7);
+            
+        
+
+        marker_501aad5f7dce599b042a864b5bc9b839.bindPopup(popup_20e49f7e3188ff3344221838260f991e)
+        ;
+
+        
+    
+    
+            marker_501aad5f7dce599b042a864b5bc9b839.bindTooltip(
+                `<div>
+                     Uçmakdere
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cd136ee7579c185318db53d58ff63b9 = L.marker(
+                [40.392222, 28.794444],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_90582732113d46b0febb9319f3d077c5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_7cd136ee7579c185318db53d58ff63b9.setIcon(div_icon_90582732113d46b0febb9319f3d077c5);
+        
+    
+        var popup_b392f0cdcae8743b652f28447b680f73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa21fd0be13706a7608eec4ca1e268bb = $(`<div id="html_aa21fd0be13706a7608eec4ca1e268bb" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Zeytinbağı</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_b392f0cdcae8743b652f28447b680f73.setContent(html_aa21fd0be13706a7608eec4ca1e268bb);
+            
+        
+
+        marker_7cd136ee7579c185318db53d58ff63b9.bindPopup(popup_b392f0cdcae8743b652f28447b680f73)
+        ;
+
+        
+    
+    
+            marker_7cd136ee7579c185318db53d58ff63b9.bindTooltip(
+                `<div>
+                     Zeytinbağı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_477c92fa35eded8deed548f2b275ee9a = L.marker(
+                [40.910278, 29.296111],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_d27e790df2f20b0306599adc5ac06abb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_477c92fa35eded8deed548f2b275ee9a.setIcon(div_icon_d27e790df2f20b0306599adc5ac06abb);
+        
+    
+        var popup_2c722c8077b895b399326f57fb2a3465 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fd2f677b98cf80cf59926c2b8915489 = $(`<div id="html_1fd2f677b98cf80cf59926c2b8915489" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Pendik</b>: Marmara Denizi konulu 2 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_2c722c8077b895b399326f57fb2a3465.setContent(html_1fd2f677b98cf80cf59926c2b8915489);
+            
+        
+
+        marker_477c92fa35eded8deed548f2b275ee9a.bindPopup(popup_2c722c8077b895b399326f57fb2a3465)
+        ;
+
+        
+    
+    
+            marker_477c92fa35eded8deed548f2b275ee9a.bindTooltip(
+                `<div>
+                     Pendik
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_831b3e9202ade525b29908c92329e3bf = L.marker(
+                [40.431667, 29.156111],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_ff6cae86d7aebe7ee1a5d10bbb6a1781 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_831b3e9202ade525b29908c92329e3bf.setIcon(div_icon_ff6cae86d7aebe7ee1a5d10bbb6a1781);
+        
+    
+        var popup_b3341fa2a9e150bc6ca9890f2758283f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_970c4893f7d2f25b04e576d6f2f7b84e = $(`<div id="html_970c4893f7d2f25b04e576d6f2f7b84e" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Gemlik</b>: Marmara Denizi konulu 9 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_b3341fa2a9e150bc6ca9890f2758283f.setContent(html_970c4893f7d2f25b04e576d6f2f7b84e);
+            
+        
+
+        marker_831b3e9202ade525b29908c92329e3bf.bindPopup(popup_b3341fa2a9e150bc6ca9890f2758283f)
+        ;
+
+        
+    
+    
+            marker_831b3e9202ade525b29908c92329e3bf.bindTooltip(
+                `<div>
+                     Gemlik
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_819e2fffacf1eb75c079852165bbb9f6 = L.marker(
+                [40.5, 27.566667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_3e86f3ef7d25daa750bf30a7f519e928 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_819e2fffacf1eb75c079852165bbb9f6.setIcon(div_icon_3e86f3ef7d25daa750bf30a7f519e928);
+        
+    
+        var popup_71a8bbbdf00ffaff409decaab6e070cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abbd88253663756ace8bcd93076f0165 = $(`<div id="html_abbd88253663756ace8bcd93076f0165" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Marmara Takımadaları</b>: Marmara Denizi konulu 4 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_71a8bbbdf00ffaff409decaab6e070cc.setContent(html_abbd88253663756ace8bcd93076f0165);
+            
+        
+
+        marker_819e2fffacf1eb75c079852165bbb9f6.bindPopup(popup_71a8bbbdf00ffaff409decaab6e070cc)
+        ;
+
+        
+    
+    
+            marker_819e2fffacf1eb75c079852165bbb9f6.bindTooltip(
+                `<div>
+                     Marmara Takımadaları
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29271be9486ad9994634d1b5ddd7d73a = L.marker(
+                [40.616667, 27.616667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_7e37f414021f4623895ff4f77850b850 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_29271be9486ad9994634d1b5ddd7d73a.setIcon(div_icon_7e37f414021f4623895ff4f77850b850);
+        
+    
+        var popup_a5cec1966d0b5701db169bf97a6c2965 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_207e9922e5e782b4884f4ed98b0f428c = $(`<div id="html_207e9922e5e782b4884f4ed98b0f428c" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Marmara Adası</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_a5cec1966d0b5701db169bf97a6c2965.setContent(html_207e9922e5e782b4884f4ed98b0f428c);
+            
+        
+
+        marker_29271be9486ad9994634d1b5ddd7d73a.bindPopup(popup_a5cec1966d0b5701db169bf97a6c2965)
+        ;
+
+        
+    
+    
+            marker_29271be9486ad9994634d1b5ddd7d73a.bindTooltip(
+                `<div>
+                     Marmara Adası
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95a84580169d68418fbba3ceac7e7b9e = L.marker(
+                [40.398611, 27.793056],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_a7fc0b9424dcf427c5885d701f62f534 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_95a84580169d68418fbba3ceac7e7b9e.setIcon(div_icon_a7fc0b9424dcf427c5885d701f62f534);
+        
+    
+        var popup_143a2cf4e905e8c612e5b0aa28a1806a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36558a368a0bf734ac0cde5a4dd43f14 = $(`<div id="html_36558a368a0bf734ac0cde5a4dd43f14" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Erdek</b>: Marmara Denizi konulu 3 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_143a2cf4e905e8c612e5b0aa28a1806a.setContent(html_36558a368a0bf734ac0cde5a4dd43f14);
+            
+        
+
+        marker_95a84580169d68418fbba3ceac7e7b9e.bindPopup(popup_143a2cf4e905e8c612e5b0aa28a1806a)
+        ;
+
+        
+    
+    
+            marker_95a84580169d68418fbba3ceac7e7b9e.bindTooltip(
+                `<div>
+                     Erdek
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a745ee5dc27f81815d1cfcc9a450e830 = L.marker(
+                [40.39405, 28.51041],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_63f345b8cc15ea3da5ccc6fb9b92a598 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_a745ee5dc27f81815d1cfcc9a450e830.setIcon(div_icon_63f345b8cc15ea3da5ccc6fb9b92a598);
+        
+    
+        var popup_e1cd64656ad5dc9251c6d8f533ec146b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d61346b03f45188c52712b0ba0b0d4d3 = $(`<div id="html_d61346b03f45188c52712b0ba0b0d4d3" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kocasu Deltası</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_e1cd64656ad5dc9251c6d8f533ec146b.setContent(html_d61346b03f45188c52712b0ba0b0d4d3);
+            
+        
+
+        marker_a745ee5dc27f81815d1cfcc9a450e830.bindPopup(popup_e1cd64656ad5dc9251c6d8f533ec146b)
+        ;
+
+        
+    
+    
+            marker_a745ee5dc27f81815d1cfcc9a450e830.bindTooltip(
+                `<div>
+                     Kocasu Deltası
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbe84a72034e34fed2fcc79af3da4d85 = L.marker(
+                [40.603889, 27.106389],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_0610be208f88e6604b03a22354f92c04 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_dbe84a72034e34fed2fcc79af3da4d85.setIcon(div_icon_0610be208f88e6604b03a22354f92c04);
+        
+    
+        var popup_d84f515890c09b396d4c971c4bd461ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61124933bbdad5fe61ce88c1d8165754 = $(`<div id="html_61124933bbdad5fe61ce88c1d8165754" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Şarköy</b>: Marmara Denizi konulu 5 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_d84f515890c09b396d4c971c4bd461ca.setContent(html_61124933bbdad5fe61ce88c1d8165754);
+            
+        
+
+        marker_dbe84a72034e34fed2fcc79af3da4d85.bindPopup(popup_d84f515890c09b396d4c971c4bd461ca)
+        ;
+
+        
+    
+    
+            marker_dbe84a72034e34fed2fcc79af3da4d85.bindTooltip(
+                `<div>
+                     Şarköy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c02a860023960e5f14bb69f14fe83f4d = L.marker(
+                [41.031111, 28.548333],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_2ebfd16ebe5177a8f07fbc874cb03b9c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_c02a860023960e5f14bb69f14fe83f4d.setIcon(div_icon_2ebfd16ebe5177a8f07fbc874cb03b9c);
+        
+    
+        var popup_597997a19be1354fcc22889b16158b1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5d13ce37d002ce92724cd498e1452b8 = $(`<div id="html_c5d13ce37d002ce92724cd498e1452b8" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Büyükçekmece</b>: Marmara Denizi konulu 4 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_597997a19be1354fcc22889b16158b1f.setContent(html_c5d13ce37d002ce92724cd498e1452b8);
+            
+        
+
+        marker_c02a860023960e5f14bb69f14fe83f4d.bindPopup(popup_597997a19be1354fcc22889b16158b1f)
+        ;
+
+        
+    
+    
+            marker_c02a860023960e5f14bb69f14fe83f4d.bindTooltip(
+                `<div>
+                     Büyükçekmece
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d04121a5adc6c08c2b6523079468686 = L.marker(
+                [40.413889, 26.670278],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_7ba81bbe0111635eedb1f0b2800223b7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_6d04121a5adc6c08c2b6523079468686.setIcon(div_icon_7ba81bbe0111635eedb1f0b2800223b7);
+        
+    
+        var popup_54667a33706403bdd32bb8cc21907eff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e86a44c50c867884c509470473329302 = $(`<div id="html_e86a44c50c867884c509470473329302" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Gelibolu</b>: Marmara Denizi konulu 2 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_54667a33706403bdd32bb8cc21907eff.setContent(html_e86a44c50c867884c509470473329302);
+            
+        
+
+        marker_6d04121a5adc6c08c2b6523079468686.bindPopup(popup_54667a33706403bdd32bb8cc21907eff)
+        ;
+
+        
+    
+    
+            marker_6d04121a5adc6c08c2b6523079468686.bindTooltip(
+                `<div>
+                     Gelibolu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_340098300b97f6656a3a86f19839c788 = L.marker(
+                [40.343889, 26.683611],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_0dba767c2fb03336507d0d41eff77ca5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_340098300b97f6656a3a86f19839c788.setIcon(div_icon_0dba767c2fb03336507d0d41eff77ca5);
+        
+    
+        var popup_8610d6275f0b8780500b08c17d169d39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9066e9a6164e4f3649139d304a934238 = $(`<div id="html_9066e9a6164e4f3649139d304a934238" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Lapseki</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_8610d6275f0b8780500b08c17d169d39.setContent(html_9066e9a6164e4f3649139d304a934238);
+            
+        
+
+        marker_340098300b97f6656a3a86f19839c788.bindPopup(popup_8610d6275f0b8780500b08c17d169d39)
+        ;
+
+        
+    
+    
+            marker_340098300b97f6656a3a86f19839c788.bindTooltip(
+                `<div>
+                     Lapseki
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a0ef543dfd1f61fd8f24e0eb3105cf9 = L.marker(
+                [40.403611, 27.303889],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_1925fad1adb073186b66ee1097a3c1ef = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_0a0ef543dfd1f61fd8f24e0eb3105cf9.setIcon(div_icon_1925fad1adb073186b66ee1097a3c1ef);
+        
+    
+        var popup_95172e791465ba27ce81b4e81ae1368b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fdaa39a2e041eb9942e42a4d0f98c30 = $(`<div id="html_8fdaa39a2e041eb9942e42a4d0f98c30" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Karabiga</b>: Marmara Denizi konulu 2 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_95172e791465ba27ce81b4e81ae1368b.setContent(html_8fdaa39a2e041eb9942e42a4d0f98c30);
+            
+        
+
+        marker_0a0ef543dfd1f61fd8f24e0eb3105cf9.bindPopup(popup_95172e791465ba27ce81b4e81ae1368b)
+        ;
+
+        
+    
+    
+            marker_0a0ef543dfd1f61fd8f24e0eb3105cf9.bindTooltip(
+                `<div>
+                     Karabiga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b23251a3ee11a78e8534b7ca216af680 = L.marker(
+                [40.450472, 27.752028],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_5909207d7ae0320fadd2d44426114265 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_b23251a3ee11a78e8534b7ca216af680.setIcon(div_icon_5909207d7ae0320fadd2d44426114265);
+        
+    
+        var popup_ee6954241b92e15ba0c3e71460f259b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_103c43d576b5fa859faa010407f62215 = $(`<div id="html_103c43d576b5fa859faa010407f62215" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Ocaklar</b>: Marmara Denizi konulu 4 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_ee6954241b92e15ba0c3e71460f259b1.setContent(html_103c43d576b5fa859faa010407f62215);
+            
+        
+
+        marker_b23251a3ee11a78e8534b7ca216af680.bindPopup(popup_ee6954241b92e15ba0c3e71460f259b1)
+        ;
+
+        
+    
+    
+            marker_b23251a3ee11a78e8534b7ca216af680.bindTooltip(
+                `<div>
+                     Ocaklar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cd7196931ce3cc84ae75fde8821ff95 = L.marker(
+                [40.956111, 29.16],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_35e25be46483e90c48b969df1b3b8efc = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_1cd7196931ce3cc84ae75fde8821ff95.setIcon(div_icon_35e25be46483e90c48b969df1b3b8efc);
+        
+    
+        var popup_cff28d03810212d231b16b6a12f9ca39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9666a5c605d04f862df692b644544988 = $(`<div id="html_9666a5c605d04f862df692b644544988" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Maltepe</b>: Marmara Denizi konulu 2 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_cff28d03810212d231b16b6a12f9ca39.setContent(html_9666a5c605d04f862df692b644544988);
+            
+        
+
+        marker_1cd7196931ce3cc84ae75fde8821ff95.bindPopup(popup_cff28d03810212d231b16b6a12f9ca39)
+        ;
+
+        
+    
+    
+            marker_1cd7196931ce3cc84ae75fde8821ff95.bindTooltip(
+                `<div>
+                     Maltepe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40bc2cd0ea1f495cc8109f5365152ffc = L.marker(
+                [40.183889, 26.35638],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_6c4516bd8939ce3823cbb3fcbdfd1c4e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_40bc2cd0ea1f495cc8109f5365152ffc.setIcon(div_icon_6c4516bd8939ce3823cbb3fcbdfd1c4e);
+        
+    
+        var popup_62d403b838c28e0373d30f6038182709 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b676cd3190c9c27ea45454030f4cc843 = $(`<div id="html_b676cd3190c9c27ea45454030f4cc843" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Eceabat</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_62d403b838c28e0373d30f6038182709.setContent(html_b676cd3190c9c27ea45454030f4cc843);
+            
+        
+
+        marker_40bc2cd0ea1f495cc8109f5365152ffc.bindPopup(popup_62d403b838c28e0373d30f6038182709)
+        ;
+
+        
+    
+    
+            marker_40bc2cd0ea1f495cc8109f5365152ffc.bindTooltip(
+                `<div>
+                     Eceabat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bafcf6d891c0830daaae4271b964c6c = L.marker(
+                [40.376389, 28.88333],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_a827d501e2746fd9ef1935236526a813 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_2bafcf6d891c0830daaae4271b964c6c.setIcon(div_icon_a827d501e2746fd9ef1935236526a813);
+        
+    
+        var popup_8deab2b0773208b70ef3020cdac6be72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_252c6a17d670b93b2fb1c38d28d4d2e0 = $(`<div id="html_252c6a17d670b93b2fb1c38d28d4d2e0" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Mudanya</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_8deab2b0773208b70ef3020cdac6be72.setContent(html_252c6a17d670b93b2fb1c38d28d4d2e0);
+            
+        
+
+        marker_2bafcf6d891c0830daaae4271b964c6c.bindPopup(popup_8deab2b0773208b70ef3020cdac6be72)
+        ;
+
+        
+    
+    
+            marker_2bafcf6d891c0830daaae4271b964c6c.bindTooltip(
+                `<div>
+                     Mudanya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c1b8c7f5d2460a3e62969b8a8af9cf1 = L.marker(
+                [41.125, 29.105556],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_433328cac6288cceb41dc96d91312e28 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_7c1b8c7f5d2460a3e62969b8a8af9cf1.setIcon(div_icon_433328cac6288cceb41dc96d91312e28);
+        
+    
+        var popup_225c2b4fd4557e403c20bd41cf78e229 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11151ae9242a06d76d27e9b41e3c5cb8 = $(`<div id="html_11151ae9242a06d76d27e9b41e3c5cb8" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Beykoz</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_225c2b4fd4557e403c20bd41cf78e229.setContent(html_11151ae9242a06d76d27e9b41e3c5cb8);
+            
+        
+
+        marker_7c1b8c7f5d2460a3e62969b8a8af9cf1.bindPopup(popup_225c2b4fd4557e403c20bd41cf78e229)
+        ;
+
+        
+    
+    
+            marker_7c1b8c7f5d2460a3e62969b8a8af9cf1.bindTooltip(
+                `<div>
+                     Beykoz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26dbc375f3980bacfe3ca20de8b087ee = L.marker(
+                [40.983056, 28.853611],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_f8b701a11d6ae7eaade1624270f7d22d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_26dbc375f3980bacfe3ca20de8b087ee.setIcon(div_icon_f8b701a11d6ae7eaade1624270f7d22d);
+        
+    
+        var popup_db8195963b6a3ae9bbd6c6d3b1a48b85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39083ebe900cf29bbd07b1fdb62ca4ee = $(`<div id="html_39083ebe900cf29bbd07b1fdb62ca4ee" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Bakırköy</b>: Marmara Denizi konulu 2 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_db8195963b6a3ae9bbd6c6d3b1a48b85.setContent(html_39083ebe900cf29bbd07b1fdb62ca4ee);
+            
+        
+
+        marker_26dbc375f3980bacfe3ca20de8b087ee.bindPopup(popup_db8195963b6a3ae9bbd6c6d3b1a48b85)
+        ;
+
+        
+    
+    
+            marker_26dbc375f3980bacfe3ca20de8b087ee.bindTooltip(
+                `<div>
+                     Bakırköy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab23e5916087b6e37b538c8ccdaf422c = L.marker(
+                [40.877778, 29.091667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_9c27a354f4c7370d20dea4a1376360ec = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_ab23e5916087b6e37b538c8ccdaf422c.setIcon(div_icon_9c27a354f4c7370d20dea4a1376360ec);
+        
+    
+        var popup_32afb1226b6b8a69dee7b7913b0dd602 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bb87ccb2fb7b5770a9c7323b478dd09 = $(`<div id="html_9bb87ccb2fb7b5770a9c7323b478dd09" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Heybeliada</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_32afb1226b6b8a69dee7b7913b0dd602.setContent(html_9bb87ccb2fb7b5770a9c7323b478dd09);
+            
+        
+
+        marker_ab23e5916087b6e37b538c8ccdaf422c.bindPopup(popup_32afb1226b6b8a69dee7b7913b0dd602)
+        ;
+
+        
+    
+    
+            marker_ab23e5916087b6e37b538c8ccdaf422c.bindTooltip(
+                `<div>
+                     Heybeliada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06bb78c286ae989843bc958d0e44fd2a = L.marker(
+                [40.83334, 28.333333],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_3a86cc041f8751ae788349e8faa95506 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_06bb78c286ae989843bc958d0e44fd2a.setIcon(div_icon_3a86cc041f8751ae788349e8faa95506);
+        
+    
+        var popup_bc8ccf9214817bf4c029035ebefa2c1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08adedf28195b7c7741a6c2e6aa003a1 = $(`<div id="html_08adedf28195b7c7741a6c2e6aa003a1" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kumburgaz Havzası</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_bc8ccf9214817bf4c029035ebefa2c1f.setContent(html_08adedf28195b7c7741a6c2e6aa003a1);
+            
+        
+
+        marker_06bb78c286ae989843bc958d0e44fd2a.bindPopup(popup_bc8ccf9214817bf4c029035ebefa2c1f)
+        ;
+
+        
+    
+    
+            marker_06bb78c286ae989843bc958d0e44fd2a.bindTooltip(
+                `<div>
+                     Kumburgaz Havzası
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcdc2323cba64c7f95ed3c7869f61d5e = L.marker(
+                [40.983056, 28.853611],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_e6e6e65bb730186d278d9c0c2245892b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_fcdc2323cba64c7f95ed3c7869f61d5e.setIcon(div_icon_e6e6e65bb730186d278d9c0c2245892b);
+        
+    
+        var popup_a46fe0f9f912287060d7b3f17abd3e52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4844001cc32e31fb874cbe29f49b03e = $(`<div id="html_f4844001cc32e31fb874cbe29f49b03e" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Ataköy</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_a46fe0f9f912287060d7b3f17abd3e52.setContent(html_f4844001cc32e31fb874cbe29f49b03e);
+            
+        
+
+        marker_fcdc2323cba64c7f95ed3c7869f61d5e.bindPopup(popup_a46fe0f9f912287060d7b3f17abd3e52)
+        ;
+
+        
+    
+    
+            marker_fcdc2323cba64c7f95ed3c7869f61d5e.bindTooltip(
+                `<div>
+                     Ataköy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1bdabc9a6674bf5ba6d1173c35ab668 = L.marker(
+                [40.964722, 28.674444],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_128665a22436cb91af4bda0b92884e34 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_a1bdabc9a6674bf5ba6d1173c35ab668.setIcon(div_icon_128665a22436cb91af4bda0b92884e34);
+        
+    
+        var popup_a96641a9e0bed148a5372a41c1579e40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de18f2f626fc432343b7cf802b1a9a60 = $(`<div id="html_de18f2f626fc432343b7cf802b1a9a60" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Ambarlı</b>: Marmara Denizi konulu 3 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_a96641a9e0bed148a5372a41c1579e40.setContent(html_de18f2f626fc432343b7cf802b1a9a60);
+            
+        
+
+        marker_a1bdabc9a6674bf5ba6d1173c35ab668.bindPopup(popup_a96641a9e0bed148a5372a41c1579e40)
+        ;
+
+        
+    
+    
+            marker_a1bdabc9a6674bf5ba6d1173c35ab668.bindTooltip(
+                `<div>
+                     Ambarlı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3422e123d7740a5d0e4611ce3a0cefe4 = L.marker(
+                [41.016667, 29.016667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_c29ce68e75ecaefd32b76ef733b641b5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_3422e123d7740a5d0e4611ce3a0cefe4.setIcon(div_icon_c29ce68e75ecaefd32b76ef733b641b5);
+        
+    
+        var popup_5e0d352054646049313d060c7b6df12e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad1a6a4f7b372af65dd000d79c4d850a = $(`<div id="html_ad1a6a4f7b372af65dd000d79c4d850a" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Üsküdar</b>: Marmara Denizi konulu 2 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_5e0d352054646049313d060c7b6df12e.setContent(html_ad1a6a4f7b372af65dd000d79c4d850a);
+            
+        
+
+        marker_3422e123d7740a5d0e4611ce3a0cefe4.bindPopup(popup_5e0d352054646049313d060c7b6df12e)
+        ;
+
+        
+    
+    
+            marker_3422e123d7740a5d0e4611ce3a0cefe4.bindTooltip(
+                `<div>
+                     Üsküdar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7eb911e215327ddd96d3c77dfc59526a = L.marker(
+                [41.016667, 29.016667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_be0a71b1c28243efd45299fc6551aae8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_7eb911e215327ddd96d3c77dfc59526a.setIcon(div_icon_be0a71b1c28243efd45299fc6551aae8);
+        
+    
+        var popup_6a88d2e7e33973520d27ca4c2be8be9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68ff196f31fa1b074a8edcbcadd16353 = $(`<div id="html_68ff196f31fa1b074a8edcbcadd16353" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Armutlu</b>: Marmara Denizi konulu 3 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_6a88d2e7e33973520d27ca4c2be8be9e.setContent(html_68ff196f31fa1b074a8edcbcadd16353);
+            
+        
+
+        marker_7eb911e215327ddd96d3c77dfc59526a.bindPopup(popup_6a88d2e7e33973520d27ca4c2be8be9e)
+        ;
+
+        
+    
+    
+            marker_7eb911e215327ddd96d3c77dfc59526a.bindTooltip(
+                `<div>
+                     Armutlu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10cc58e77ec097a617e23777990487d6 = L.marker(
+                [40.642222, 29.120278],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_be53a019a226355ab4343adf0a7c0c21 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_10cc58e77ec097a617e23777990487d6.setIcon(div_icon_be53a019a226355ab4343adf0a7c0c21);
+        
+    
+        var popup_0634fcf2fa3ed0f9864716ff205efdf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95f1f402199c05755af31dbf42db6247 = $(`<div id="html_95f1f402199c05755af31dbf42db6247" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Çınarcık</b>: Marmara Denizi konulu 9 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_0634fcf2fa3ed0f9864716ff205efdf0.setContent(html_95f1f402199c05755af31dbf42db6247);
+            
+        
+
+        marker_10cc58e77ec097a617e23777990487d6.bindPopup(popup_0634fcf2fa3ed0f9864716ff205efdf0)
+        ;
+
+        
+    
+    
+            marker_10cc58e77ec097a617e23777990487d6.bindTooltip(
+                `<div>
+                     Çınarcık
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c23fa7122b96d60b8b02fc411732076e = L.marker(
+                [40.013333, 26.331944],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_1da6d49474ee1f2cda7bac358e4b63d5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_c23fa7122b96d60b8b02fc411732076e.setIcon(div_icon_1da6d49474ee1f2cda7bac358e4b63d5);
+        
+    
+        var popup_4937082bf2eff67aa7ccec98573f8120 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c68cadd62a53a1f908ac726539f97a8 = $(`<div id="html_4c68cadd62a53a1f908ac726539f97a8" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>İntepe</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_4937082bf2eff67aa7ccec98573f8120.setContent(html_4c68cadd62a53a1f908ac726539f97a8);
+            
+        
+
+        marker_c23fa7122b96d60b8b02fc411732076e.bindPopup(popup_4937082bf2eff67aa7ccec98573f8120)
+        ;
+
+        
+    
+    
+            marker_c23fa7122b96d60b8b02fc411732076e.bindTooltip(
+                `<div>
+                     İntepe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2fbfa610522c4cd76a9cba058dff118 = L.marker(
+                [40.072222, 30.161111],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_afc8afcaaf2ba32455aaba79fc4a3221 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_d2fbfa610522c4cd76a9cba058dff118.setIcon(div_icon_afc8afcaaf2ba32455aaba79fc4a3221);
+        
+    
+        var popup_d3c393eef508e12015b6935685e1f327 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d8c08716742840bb897ca89921329fb = $(`<div id="html_1d8c08716742840bb897ca89921329fb" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kandıra</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_d3c393eef508e12015b6935685e1f327.setContent(html_1d8c08716742840bb897ca89921329fb);
+            
+        
+
+        marker_d2fbfa610522c4cd76a9cba058dff118.bindPopup(popup_d3c393eef508e12015b6935685e1f327)
+        ;
+
+        
+    
+    
+            marker_d2fbfa610522c4cd76a9cba058dff118.bindTooltip(
+                `<div>
+                     Kandıra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8343565778bfc7bbebbca0fc8c07edee = L.marker(
+                [40.7597, 29.3856],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_2ee6dae1cae597d6a01e1703ac5a94a8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_8343565778bfc7bbebbca0fc8c07edee.setIcon(div_icon_2ee6dae1cae597d6a01e1703ac5a94a8);
+        
+    
+        var popup_4fd3eee25bb03831e19fcbeb5cf38eab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f2951e3fb23b4f33f2e8251a9cd3dbb = $(`<div id="html_3f2951e3fb23b4f33f2e8251a9cd3dbb" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Darıca</b>: Marmara Denizi konulu 3 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_4fd3eee25bb03831e19fcbeb5cf38eab.setContent(html_3f2951e3fb23b4f33f2e8251a9cd3dbb);
+            
+        
+
+        marker_8343565778bfc7bbebbca0fc8c07edee.bindPopup(popup_4fd3eee25bb03831e19fcbeb5cf38eab)
+        ;
+
+        
+    
+    
+            marker_8343565778bfc7bbebbca0fc8c07edee.bindTooltip(
+                `<div>
+                     Darıca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8b8c87721a97cbeabd1a17590cd1108 = L.marker(
+                [39.740833, 27.819167],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_a79e1367aa0342ca9b5ac7f38082c267 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_a8b8c87721a97cbeabd1a17590cd1108.setIcon(div_icon_a79e1367aa0342ca9b5ac7f38082c267);
+        
+    
+        var popup_5f90eb90353805b1fc6a9af1d5d59bcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac8512a7e2e1482bd324643ed3ab5c06 = $(`<div id="html_ac8512a7e2e1482bd324643ed3ab5c06" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Balıkesir</b>: Marmara Denizi konulu 4 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_5f90eb90353805b1fc6a9af1d5d59bcf.setContent(html_ac8512a7e2e1482bd324643ed3ab5c06);
+            
+        
+
+        marker_a8b8c87721a97cbeabd1a17590cd1108.bindPopup(popup_5f90eb90353805b1fc6a9af1d5d59bcf)
+        ;
+
+        
+    
+    
+            marker_a8b8c87721a97cbeabd1a17590cd1108.bindTooltip(
+                `<div>
+                     Balıkesir
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_310d37b9b61c48474d6b493510e57bf2 = L.marker(
+                [40.415655, 27.067543],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_0305ea3c1b031b1289f2e80d432a57ee = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_310d37b9b61c48474d6b493510e57bf2.setIcon(div_icon_0305ea3c1b031b1289f2e80d432a57ee);
+        
+    
+        var popup_59579d92d5f92609d09269d51dd19efd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce605a449beddbeafe3c0bd6bc14129e = $(`<div id="html_ce605a449beddbeafe3c0bd6bc14129e" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kemer</b>: Marmara Denizi konulu 3 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_59579d92d5f92609d09269d51dd19efd.setContent(html_ce605a449beddbeafe3c0bd6bc14129e);
+            
+        
+
+        marker_310d37b9b61c48474d6b493510e57bf2.bindPopup(popup_59579d92d5f92609d09269d51dd19efd)
+        ;
+
+        
+    
+    
+            marker_310d37b9b61c48474d6b493510e57bf2.bindTooltip(
+                `<div>
+                     Kemer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f79ff4823ab9468bad50137109d956fc = L.marker(
+                [40.958333, 29.095556],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_6508abbab08e76d897267a19e4eebcde = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_f79ff4823ab9468bad50137109d956fc.setIcon(div_icon_6508abbab08e76d897267a19e4eebcde);
+        
+    
+        var popup_ca3a246083cc4545ef200349fa109c03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d63883fb1a87b44a49145607945ea887 = $(`<div id="html_d63883fb1a87b44a49145607945ea887" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Bostancı</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_ca3a246083cc4545ef200349fa109c03.setContent(html_d63883fb1a87b44a49145607945ea887);
+            
+        
+
+        marker_f79ff4823ab9468bad50137109d956fc.bindPopup(popup_ca3a246083cc4545ef200349fa109c03)
+        ;
+
+        
+    
+    
+            marker_f79ff4823ab9468bad50137109d956fc.bindTooltip(
+                `<div>
+                     Bostancı
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50de960fb28f38cc597ea2638687e93a = L.marker(
+                [40.3662, 28.9008],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_7ab6e8c84f443777051b25701c915a74 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_50de960fb28f38cc597ea2638687e93a.setIcon(div_icon_7ab6e8c84f443777051b25701c915a74);
+        
+    
+        var popup_1e73976414fdad10e8db831f083f3dac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9871caa28464cb6d581a8d0fbc4d1f25 = $(`<div id="html_9871caa28464cb6d581a8d0fbc4d1f25" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Altıntaş</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_1e73976414fdad10e8db831f083f3dac.setContent(html_9871caa28464cb6d581a8d0fbc4d1f25);
+            
+        
+
+        marker_50de960fb28f38cc597ea2638687e93a.bindPopup(popup_1e73976414fdad10e8db831f083f3dac)
+        ;
+
+        
+    
+    
+            marker_50de960fb28f38cc597ea2638687e93a.bindTooltip(
+                `<div>
+                     Altıntaş
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83c506fd85eecc9c3f26d8d787582dc0 = L.marker(
+                [40.8, 29.433333],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_7df7b804b3590f279f54da15910852a4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_83c506fd85eecc9c3f26d8d787582dc0.setIcon(div_icon_7df7b804b3590f279f54da15910852a4);
+        
+    
+        var popup_e0c24f7ff61b9d855c8a86f64cdce353 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_799f1d00c0e4265db88b3a3efaa18227 = $(`<div id="html_799f1d00c0e4265db88b3a3efaa18227" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Gebze</b>: Marmara Denizi konulu 2 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_e0c24f7ff61b9d855c8a86f64cdce353.setContent(html_799f1d00c0e4265db88b3a3efaa18227);
+            
+        
+
+        marker_83c506fd85eecc9c3f26d8d787582dc0.bindPopup(popup_e0c24f7ff61b9d855c8a86f64cdce353)
+        ;
+
+        
+    
+    
+            marker_83c506fd85eecc9c3f26d8d787582dc0.bindTooltip(
+                `<div>
+                     Gebze
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca9225eb90d13644733222acd36bc602 = L.marker(
+                [41.681111, 27.471389],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_39ec64fbe5ddc426701be475f1a1c305 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_ca9225eb90d13644733222acd36bc602.setIcon(div_icon_39ec64fbe5ddc426701be475f1a1c305);
+        
+    
+        var popup_d9ea70735d39e4dd8dcb305f13c5011b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fb35856db593e8c55cd58f417eb9fd6 = $(`<div id="html_8fb35856db593e8c55cd58f417eb9fd6" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kırklareli</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_d9ea70735d39e4dd8dcb305f13c5011b.setContent(html_8fb35856db593e8c55cd58f417eb9fd6);
+            
+        
+
+        marker_ca9225eb90d13644733222acd36bc602.bindPopup(popup_d9ea70735d39e4dd8dcb305f13c5011b)
+        ;
+
+        
+    
+    
+            marker_ca9225eb90d13644733222acd36bc602.bindTooltip(
+                `<div>
+                     Kırklareli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2f5a448652faeafdc8ed84084df622a = L.marker(
+                [39.304722, 29.59],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_7087b7cb2eb5f082232015776e632d93 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_b2f5a448652faeafdc8ed84084df622a.setIcon(div_icon_7087b7cb2eb5f082232015776e632d93);
+        
+    
+        var popup_b60b15b53d77c996f064b9675ba41fd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98ee00680bacccd768ed196a5d21e299 = $(`<div id="html_98ee00680bacccd768ed196a5d21e299" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kütahya</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_b60b15b53d77c996f064b9675ba41fd5.setContent(html_98ee00680bacccd768ed196a5d21e299);
+            
+        
+
+        marker_b2f5a448652faeafdc8ed84084df622a.bindPopup(popup_b60b15b53d77c996f064b9675ba41fd5)
+        ;
+
+        
+    
+    
+            marker_b2f5a448652faeafdc8ed84084df622a.bindTooltip(
+                `<div>
+                     Kütahya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c71a7e006cda938ae9fa9d1e3e379a4d = L.marker(
+                [40.90198, 29.14998],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_c38917e815339986f4b6ecf6b18280b8 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_c71a7e006cda938ae9fa9d1e3e379a4d.setIcon(div_icon_c38917e815339986f4b6ecf6b18280b8);
+        
+    
+        var popup_217f72c2cb4a2cf99579d0a08f7f44a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94c9512c023ebda4f4dfed718701667f = $(`<div id="html_94c9512c023ebda4f4dfed718701667f" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Dragos</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_217f72c2cb4a2cf99579d0a08f7f44a2.setContent(html_94c9512c023ebda4f4dfed718701667f);
+            
+        
+
+        marker_c71a7e006cda938ae9fa9d1e3e379a4d.bindPopup(popup_217f72c2cb4a2cf99579d0a08f7f44a2)
+        ;
+
+        
+    
+    
+            marker_c71a7e006cda938ae9fa9d1e3e379a4d.bindTooltip(
+                `<div>
+                     Dragos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_351bfcd5237b7423d53b6fe92ef71b0e = L.marker(
+                [40.974444, 29.043611],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_ee4bde0bcb983715338020a022fd8f6f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_351bfcd5237b7423d53b6fe92ef71b0e.setIcon(div_icon_ee4bde0bcb983715338020a022fd8f6f);
+        
+    
+        var popup_62f0fcc5cd4396db784e3eb45007e0db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13fa941eeecbfac8fabf89010c8348f5 = $(`<div id="html_13fa941eeecbfac8fabf89010c8348f5" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Fenerbahçe</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_62f0fcc5cd4396db784e3eb45007e0db.setContent(html_13fa941eeecbfac8fabf89010c8348f5);
+            
+        
+
+        marker_351bfcd5237b7423d53b6fe92ef71b0e.bindPopup(popup_62f0fcc5cd4396db784e3eb45007e0db)
+        ;
+
+        
+    
+    
+            marker_351bfcd5237b7423d53b6fe92ef71b0e.bindTooltip(
+                `<div>
+                     Fenerbahçe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd425d11a5e45686499be09c224287a1 = L.marker(
+                [41.676944, 26.555556],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_a5cfc8ce3e350d6e15ad8e8ea6de8a1a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_cd425d11a5e45686499be09c224287a1.setIcon(div_icon_a5cfc8ce3e350d6e15ad8e8ea6de8a1a);
+        
+    
+        var popup_0586a419581d4ed0c1abc3fda873daeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6112fbb151412babded2e09ba3797f60 = $(`<div id="html_6112fbb151412babded2e09ba3797f60" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Edirne</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_0586a419581d4ed0c1abc3fda873daeb.setContent(html_6112fbb151412babded2e09ba3797f60);
+            
+        
+
+        marker_cd425d11a5e45686499be09c224287a1.bindPopup(popup_0586a419581d4ed0c1abc3fda873daeb)
+        ;
+
+        
+    
+    
+            marker_cd425d11a5e45686499be09c224287a1.bindTooltip(
+                `<div>
+                     Edirne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_baae89f4766828263f53136fb9f025db = L.marker(
+                [40.790833, 26.555556],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_9fd313e58f5dd49f68b6b11393c14796 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_baae89f4766828263f53136fb9f025db.setIcon(div_icon_9fd313e58f5dd49f68b6b11393c14796);
+        
+    
+        var popup_f531251dbe6c085af8f41f31c264df20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45f6feac164601e0356f5de39b398bb2 = $(`<div id="html_45f6feac164601e0356f5de39b398bb2" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Hereke</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_f531251dbe6c085af8f41f31c264df20.setContent(html_45f6feac164601e0356f5de39b398bb2);
+            
+        
+
+        marker_baae89f4766828263f53136fb9f025db.bindPopup(popup_f531251dbe6c085af8f41f31c264df20)
+        ;
+
+        
+    
+    
+            marker_baae89f4766828263f53136fb9f025db.bindTooltip(
+                `<div>
+                     Hereke
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3720029e5831a458596ccb23ce3af70 = L.marker(
+                [40.876667, 28.966667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_7c0132e312bd87c58cda111c49d9b3ad = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_b3720029e5831a458596ccb23ce3af70.setIcon(div_icon_7c0132e312bd87c58cda111c49d9b3ad);
+        
+    
+        var popup_8b997c9e32cd5ec86215905d9501c9cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcc90e1eff36d40f58be15fc58fb1d8f = $(`<div id="html_dcc90e1eff36d40f58be15fc58fb1d8f" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Sivriada</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_8b997c9e32cd5ec86215905d9501c9cf.setContent(html_dcc90e1eff36d40f58be15fc58fb1d8f);
+            
+        
+
+        marker_b3720029e5831a458596ccb23ce3af70.bindPopup(popup_8b997c9e32cd5ec86215905d9501c9cf)
+        ;
+
+        
+    
+    
+            marker_b3720029e5831a458596ccb23ce3af70.bindTooltip(
+                `<div>
+                     Sivriada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_725b474c9c2d2ccecb2ebc51de708465 = L.marker(
+                [40.978333, 29.040278],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_0f6a7387c2b3e9f892c5a141b11df95b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_725b474c9c2d2ccecb2ebc51de708465.setIcon(div_icon_0f6a7387c2b3e9f892c5a141b11df95b);
+        
+    
+        var popup_3551920fb17d77a7c7649b3d4a1ac205 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22324662ca203c1272af493f06071ab5 = $(`<div id="html_22324662ca203c1272af493f06071ab5" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kalamış</b>: Marmara Denizi konulu 6 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_3551920fb17d77a7c7649b3d4a1ac205.setContent(html_22324662ca203c1272af493f06071ab5);
+            
+        
+
+        marker_725b474c9c2d2ccecb2ebc51de708465.bindPopup(popup_3551920fb17d77a7c7649b3d4a1ac205)
+        ;
+
+        
+    
+    
+            marker_725b474c9c2d2ccecb2ebc51de708465.bindTooltip(
+                `<div>
+                     Kalamış
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ee17c76311b3777407a5963eb920b06 = L.marker(
+                [40.906389, 29.210833],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_ad02a2e16a2f21cc29453d2097719d00 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_7ee17c76311b3777407a5963eb920b06.setIcon(div_icon_ad02a2e16a2f21cc29453d2097719d00);
+        
+    
+        var popup_428c88a0393085fe90e56834c3b96ec4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5d89d3ab16b38d32f92eaf4d2c7a4b0 = $(`<div id="html_a5d89d3ab16b38d32f92eaf4d2c7a4b0" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kartal</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_428c88a0393085fe90e56834c3b96ec4.setContent(html_a5d89d3ab16b38d32f92eaf4d2c7a4b0);
+            
+        
+
+        marker_7ee17c76311b3777407a5963eb920b06.bindPopup(popup_428c88a0393085fe90e56834c3b96ec4)
+        ;
+
+        
+    
+    
+            marker_7ee17c76311b3777407a5963eb920b06.bindTooltip(
+                `<div>
+                     Kartal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25f0d22c78d462a6fa5b71c4576e5a95 = L.marker(
+                [41.013056, 28.953611],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_a3a8f7aae999b01eaf47aa7230b80a49 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_25f0d22c78d462a6fa5b71c4576e5a95.setIcon(div_icon_a3a8f7aae999b01eaf47aa7230b80a49);
+        
+    
+        var popup_43926601731105ad6a7ed65e488f889b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e95ac5d8326f4f44f6330be3347d866 = $(`<div id="html_3e95ac5d8326f4f44f6330be3347d866" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Fatih</b>: Marmara Denizi konulu 1 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_43926601731105ad6a7ed65e488f889b.setContent(html_3e95ac5d8326f4f44f6330be3347d866);
+            
+        
+
+        marker_25f0d22c78d462a6fa5b71c4576e5a95.bindPopup(popup_43926601731105ad6a7ed65e488f889b)
+        ;
+
+        
+    
+    
+            marker_25f0d22c78d462a6fa5b71c4576e5a95.bindTooltip(
+                `<div>
+                     Fatih
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e48f9d51d57dd9cc4b61e2738f4125d0 = L.marker(
+                [41.073889, 28.246389],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_7a35ab460078d82b78286c06123d460d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_e48f9d51d57dd9cc4b61e2738f4125d0.setIcon(div_icon_7a35ab460078d82b78286c06123d460d);
+        
+    
+        var popup_54a98773fa5431d71b9939b5741fc724 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f022241e1d2b43c983fdf108c52a983 = $(`<div id="html_2f022241e1d2b43c983fdf108c52a983" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Silivri</b>: Marmara Denizi konulu 8 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_54a98773fa5431d71b9939b5741fc724.setContent(html_2f022241e1d2b43c983fdf108c52a983);
+            
+        
+
+        marker_e48f9d51d57dd9cc4b61e2738f4125d0.bindPopup(popup_54a98773fa5431d71b9939b5741fc724)
+        ;
+
+        
+    
+    
+            marker_e48f9d51d57dd9cc4b61e2738f4125d0.bindTooltip(
+                `<div>
+                     Silivri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ece5ab37e19be3524862eeadcdf2fcd = L.marker(
+                [40.986944, 29.036667],
+                {}
+            ).addTo(map_08fa4526ed90667432435ce8afac2a37);
+        
+    
+            var div_icon_01805bc7e1a244855a1951f34367cfc2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"background-color: lightgray; width: 10px; height: 10px; border-radius: 50%; opacity: 0.5;\"\u003e\u003c/div\u003e", "iconAnchor": [5, 5], "iconSize": [2, 2]});
+            marker_0ece5ab37e19be3524862eeadcdf2fcd.setIcon(div_icon_01805bc7e1a244855a1951f34367cfc2);
+        
+    
+        var popup_502828487f62e41a7b0f596d3c23f665 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d147bb381af02d4afa8a522cf12d7b3 = $(`<div id="html_6d147bb381af02d4afa8a522cf12d7b3" style="width: 100.0%; height: 100.0%;"><div style='width: 100px;'><b>Kadıköy</b>: Marmara Denizi konulu 2 bilimsel araştırma bulunmaktadır.</div>`)[0];
+                popup_502828487f62e41a7b0f596d3c23f665.setContent(html_6d147bb381af02d4afa8a522cf12d7b3);
+            
+        
+
+        marker_0ece5ab37e19be3524862eeadcdf2fcd.bindPopup(popup_502828487f62e41a7b0f596d3c23f665)
+        ;
+
+        
+    
+    
+            marker_0ece5ab37e19be3524862eeadcdf2fcd.bindTooltip(
+                `<div>
+                     Kadıköy
                  </div>`,
                 {"sticky": true}
             );
