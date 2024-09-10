@@ -211,7 +211,7 @@ for facility in fac:
     folium.Marker(
         location=[facility['lat'], facility['lon']],
         #popup=folium.Popup(facility['detail'], max_width=200),  #Balloon that opens when clicked
-        popup=folium.Popup(f"{facility['name']}<br>Kapasite: {str(facility['detail'])} (m<sup>3</sup>/gün)<br>Hizmete Giriş Yılı: {facility['detail_2']}", max_width=200), #Balloon that opens when clicked
+        popup=folium.Popup(f"<b>{facility['name']}</b><br><b>Kapasite:</b> {str(facility['detail'])} (m<sup>3</sup>/gün)<br><b>Hizmete Giriş Yılı:</b> {facility['detail_2']}", max_width=200), #Balloon that opens when clicked
         icon=folium.Icon(color = 'blue', icon = 'tint', prefix = 'glyphicon'),
         tooltip=facility['name'],  #Note balloon that appears when hovering over it with the mouse
     ).add_to(marmara_region_map)
@@ -237,7 +237,7 @@ for f in fac_3:
 # Creating a custom legend
 legend_html = '''
 <div style="position: fixed;
-            top: 25px; right: 25px; width: 250px; height: 90px;
+            top: 25px; right: 25px; width: 250px; height: 50px;
             background-color: white; z-index:9999; font-size:12px;
             border:2px white; padding: 10px;">
     <i class="fa fa-tint" style="color:blue"></i> Atıksu ve İçme Suyu Arıtma Tesisleri<br>
