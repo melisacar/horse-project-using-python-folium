@@ -237,8 +237,8 @@ for f in fac_3:
 # Creating a custom legend
 legend_html = '''
 <div style="position: fixed;
-            top: 25px; right: 25px; width: 250px; height: 90px;
-            background-color: white; z-index:9999; font-size:12px;
+            top: 25px; right: 25px; width: 250px; height: 80px;
+            background-color: white; z-index:9999; font-size:10px;
             border:2px white; padding: 10px;">
     <i class="fa fa-tint" style="color:blue"></i> Atıksu ve İçme Suyu Arıtma Tesisleri<br>
     <i class="fa fa-trash" style="color:green"></i> Atık Yönetimi Tesisleri<br>
