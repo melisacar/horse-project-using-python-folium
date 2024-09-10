@@ -19,9 +19,13 @@ jobs:
           files: '**/*.md'   # Example of file patterns to check (optional)
           isolated: false  # Set to true if you want to ignore implicit config files
           write_changes: true  # Writes changes to the local checkout
+      - name: Check if there are changes
+        run: |
+          git diff --exit-code || echo "Changes detected" 
+        id: changes_check
 
       - name: Commit and Push changes
-        if: steps.typo_check.outputs.changed == true
+        if: steps.changes_check.outcome != 'success'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -30,7 +34,7 @@ jobs:
           git push origin typo-fixes
 
       - name: Create Pull Request
-        if: steps.typo_check.outputs.changed == true
+        if: steps.changes_check.outcome != 'success'
         uses: peter-evans/create-pull-request@v5
         with:
           branch: typo-fixes
