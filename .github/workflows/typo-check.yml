@@ -21,7 +21,7 @@ jobs:
           write_changes: true  # Writes changes to the local checkout
 
       - name: Commit and Push changes
-        if: steps.typo_check.outputs.changed == 'true'
+        if: steps.typo_check.outputs.changed == true
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
@@ -30,7 +30,7 @@ jobs:
           git push origin typo-fixes
 
       - name: Create Pull Request
-        if: steps.typo_check.outputs.changed == 'true'
+        if: steps.typo_check.outputs.changed == true
         uses: peter-evans/create-pull-request@v5
         with:
           branch: typo-fixes
